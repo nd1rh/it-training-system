@@ -10,7 +10,6 @@ class UserModel extends Model
     protected $primaryKey = 'id';
 
     // Which fields are allowed to be inserted/updated by the user 
-    // We include all our registration fields here 
     protected $allowedFields = [
         'role',
         'full_name',

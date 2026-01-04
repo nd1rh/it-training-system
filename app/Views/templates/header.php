@@ -14,7 +14,7 @@
     </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
@@ -25,20 +25,65 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <?php if (session()->get('isLoggedIn')): ?>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/dashboard">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/logout">Logout</a></li>
+                        <?php if (session()->get('role') === 'trainee'): ?>
+                            <li class="nav-item"><a class="nav-link" href="/dashboard/trainee">Dashboard</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="directoryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Directory
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="directoryDropdown">
+                                    <li><a class="dropdown-item" href="/directory/course">Courses</a></li>
+                                    <li><a class="dropdown-item" href="/directory/tutor">Tutors</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                    <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
+                                </ul>
+                            </li>
+                        <?php elseif (session()->get('role') === 'trainer'): ?>
+                            <li class="nav-item"><a class="nav-link" href="/dashboard/trainer">Dashboard</a></li>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="configureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Configuration
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="configureDropdown">
+                                <li><a class="dropdown-item" href="/configure/trainee">Trainee</a></li>
+                                <li><a class="dropdown-item" href="/configure/course_fee">Course Fee</a></li>
+                            </ul>
+                        </li>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    About
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                    <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                    <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
+                                </ul>
+                            </li>
+                        <?php endif; ?>
+                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
                     <?php else: ?>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/about">About</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/register">Register</a></li>
-                        <li class="nav-item"><a class="nav-link"
-                                href="/login">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                                <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/register">Register</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
                     <?php endif; ?>
+
                 </ul>
             </div>
         </div>
