@@ -16,8 +16,10 @@ class UserModel extends Model
         'full_name',
         'email',
         'password',
-        'phone_number',
+        'phone_num',
         'gender',
+        'payment_status',
+        'course_enrolled'
     ];
 
     // CodeIgniter can automatically handle timestamps, but our table uses 

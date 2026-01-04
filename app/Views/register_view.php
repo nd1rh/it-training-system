@@ -51,8 +51,8 @@
                             <legend>Additional Details</legend>
                             <div class="mb-3">
                                 <label>Phone Number</label>
-                                <input type="text" name="phone_number"
-                                    class="form-control" value="<?= old('phone_number') ?>">
+                                <input type="text" name="phone_num"
+                                    class="form-control" value="<?= old('phone_num') ?>">
                             </div>
                             <div class="mb-3">
                                 <label>Gender</label><br>
