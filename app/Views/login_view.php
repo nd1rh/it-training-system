@@ -17,6 +17,14 @@
                         method="post">
 
                         <div class="mb-3">
+                            <label>Role</label><br>
+                            <input type="radio" name="role"
+                                value="trainee"> Trainee
+                            <input type="radio" name="role"
+                                value="trainer"> Trainer
+                        </div>
+
+                        <div class="mb-3">
                             <label for="email" class="form-label">Email Address</label>
                             <input type="email" class="form-control" id="email" name="email" required autofocus>
                         </div>
@@ -32,7 +40,7 @@
 
                     </form>
                     <div class="text-center mt-3">
-                        <p>Don't have an account? <a href="<?=base_url('/register') ?>">Register here</a></p>
+                        <p>Don't have an account? <a href="<?= base_url('/register') ?>">Register here</a></p>
                     </div>
                 </div>
             </div>

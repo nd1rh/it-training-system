@@ -25,9 +25,16 @@
                         <fieldset>
                             <legend>Personal Information</legend>
                             <div class="mb-3">
-                                <label>First Name</label>
-                                <input type="text" name="first_name"
-                                    class="form-control" value="<?= old('first_name') ?>">
+                                <label>Role</label><br>
+                                <input type="radio" name="role"
+                                    value="trainee"> Trainee
+                                <input type="radio" name="role"
+                                    value="trainer"> Trainer
+                            </div>
+                            <div class="mb-3">
+                                <label>Full Name</label>
+                                <input type="text" name="full_name"
+                                    class="form-control" value="<?= old('full_name') ?>">
                             </div>
                             <div class="mb-3">
                                 <label>Email</label>
@@ -43,9 +50,9 @@
                         <fieldset class="mt-4">
                             <legend>Additional Details</legend>
                             <div class="mb-3">
-                                <label>Birth Date</label>
-                                <input type="date" name="birth_date"
-                                    class="form-control" value="<?= old('birth_date') ?>">
+                                <label>Phone Number</label>
+                                <input type="text" name="phone_number"
+                                    class="form-control" value="<?= old('phone_number') ?>">
                             </div>
                             <div class="mb-3">
                                 <label>Gender</label><br>
@@ -53,22 +60,6 @@
                                     value="male"> Male
                                 <input type="radio" name="gender"
                                     value="female" class="ms-3"> Female
-                            </div>
-                            <div class="mb-3">
-                                <label>Year of Study</label>
-                                <select name="year_of_study" class="formselect">
-                                    <option value="">Select Year</option>
-                                    <option value="1">Year 1</option>
-                                    <option value="2">Year 2</option>
-                                    <option value="3">Year 3</option>
-                                    <option value="4">Year 4</option>
-                                    <option value="5">Year 5</option>
-                                </select>
-                            </div>
-                            <div class="mb-3">
-                                <label>Profile Theme Color</label>
-                                <input type="color" name="theme_color"
-                                    class="form-control form-control-color" value="#3498db">
                             </div>
                         </fieldset>
                         <div class="d-grid mt-4">

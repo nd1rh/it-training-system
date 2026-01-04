@@ -18,7 +18,8 @@ class Auth extends BaseController
 
         // 1. Validation Rules 
         $rules = [
-            'first_name' => 'required|min_length[2]',
+            'role'       => 'required|in_list[trainee,trainer]',
+            'full_name' => 'required|min_length[2]',
             'email'      => 'required|valid_email|is_unique[users.email]',
             'password'   => 'required|min_length[8]'
         ];
@@ -30,10 +31,10 @@ class Auth extends BaseController
         // 3. Prepare Data 
         $userModel = new UserModel();
         $data = [
-            'first_name' => $this->request->getPost('first_name'),
+            'full_name' => $this->request->getPost('full_name'),
             'email'      => $this->request->getPost('email'),
             'password'   => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'role'       => 'member'
+            'role'       => $this->request->getPost('role')
         ];
 
         // 4. Save 
@@ -42,7 +43,7 @@ class Auth extends BaseController
         // 5. Login User (Session) 
         session()->set([
             'user_id' => $userModel->getInsertID(),
-            'username' => $data['first_name'],
+            'username' => $data['full_name'],
             'isLoggedIn' => true
         ]);
 
@@ -63,6 +64,7 @@ class Auth extends BaseController
     public function loginProcess()
     {
         // Get form input values sent via POST 
+        $role = $this->request->getPost('role');
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
@@ -70,7 +72,7 @@ class Auth extends BaseController
         $userModel = new UserModel();
 
         // Find the user by email 
-        $user = $userModel->where('email', $email)->first();
+        $user = $userModel->where('email', $email)->where('role', $role)->first();
 
         // If a user with that email exists 
         if ($user) {
@@ -80,7 +82,8 @@ class Auth extends BaseController
                 // Store user data in session after successful login 
                 session()->set([
                     'user_id'   => $user['id'],
-                    'username'  => $user['first_name'],
+                    'username'  => $user['full_name'],
+                    'role'      => $user['role'],
                     'isLoggedIn' => true
                 ]);
                 // Redirect the user to the dashboard page 
@@ -88,7 +91,7 @@ class Auth extends BaseController
             }
         }
         // If email or password is incorrect, redirect back with an error message 
-        return redirect()->back()->with('error', 'Invalid Email or Password');
+        return redirect()->back()->with('error', 'Invalid Role, Email or Password');
     }
     public function logout()
     {
