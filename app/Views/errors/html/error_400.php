@@ -70,7 +70,7 @@
 </head>
 <body>
 <div class="wrap">
-    <h1>409</h1>
+    <h1>400</h1>
 
     <p>
         <?php if (ENVIRONMENT !== 'production') : ?>
