@@ -21,7 +21,7 @@
                             <input type="radio" name="role"
                                 value="trainee"> Trainee
                             <input type="radio" name="role"
-                                value="trainer"> Trainer
+                                value="admin"> Admin
                         </div>
 
                         <div class="mb-3">

@@ -1,0 +1,16 @@
+.navbar {
+    padding: 1.2rem 0;
+}
+
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.05rem;
+}
+
+body {
+    padding-top: 90px;
+}

@@ -18,50 +18,48 @@
                             </ul>
                         </div>
                     <?php endif; ?>
-                    <form action="<?= base_url('/register-process') ?>"
-                        method="post">
+                    <form action="<?= base_url('/register-process') ?>" method="post" enctype="multipart/form-data">
 
                         <!-- Personal Info -->
                         <fieldset>
                             <legend>Personal Information</legend>
+
                             <div class="mb-3">
-                                <label>Role</label><br>
-                                <input type="radio" name="role"
-                                    value="trainee"> Trainee
-                                <input type="radio" name="role"
-                                    value="trainer"> Trainer
+                                <label>Profile Image</label>
+                                <input type="file" name="profile_image" class="form-control">
                             </div>
+
                             <div class="mb-3">
                                 <label>Full Name</label>
-                                <input type="text" name="full_name"
-                                    class="form-control" value="<?= old('full_name') ?>">
+                                <input type="text" name="full_name" class="form-control" value="<?= old('full_name') ?>">
                             </div>
+
                             <div class="mb-3">
                                 <label>Email</label>
                                 <input type="email" name="email" class="form-control" value="<?= old('email') ?>">
                             </div>
+                            
                             <div class="mb-3">
                                 <label>Password</label>
-                                <input type="password" name="password"
-                                    class="form-control">
+                                <input type="password" name="password" class="form-control">
                             </div>
+                            
                         </fieldset>
+
                         <!-- Additional Details -->
                         <fieldset class="mt-4">
                             <legend>Additional Details</legend>
                             <div class="mb-3">
                                 <label>Phone Number</label>
-                                <input type="text" name="phone_num"
-                                    class="form-control" value="<?= old('phone_num') ?>">
+                                <input type="text" name="phone_num" class="form-control" value="<?= old('phone_num') ?>">
                             </div>
                             <div class="mb-3">
                                 <label>Gender</label><br>
-                                <input type="radio" name="gender"
-                                    value="male"> Male
-                                <input type="radio" name="gender"
-                                    value="female" class="ms-3"> Female
+                                <input type="radio" name="gender" value="male"> Male
+                                <input type="radio" name="gender" value="female" class="ms-3"> Female
                             </div>
                         </fieldset>
+
                         <div class="d-grid mt-4">
                             <button type="submit" class="btn btn-primary">Register</button>
                         </div>

@@ -18,14 +18,22 @@ class Auth extends BaseController
 
         // 1. Validation Rules 
         $rules = [
-            'role'       => 'required|in_list[trainee,trainer]',
             'full_name' => 'required|min_length[2]',
             'email'      => 'required|valid_email|is_unique[users.email]',
-            'password'   => 'required|min_length[8]'
+            'password'   => 'required|min_length[8]',
+            'profile_image' => 'max_size[profile_image,2048]|is_image[profile_image]|mime_in[profile_image,image/jpg,image/jpeg,image/png]'
         ];
         // 2. Check Validation 
         if (! $this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+        }
+
+        // Handle profile image upload
+        $imageName = null;
+        $imageFile = $this->request->getFile('profile_image');
+        if ($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
+            $imageName = $imageFile->getRandomName();
+            $imageFile->move(FCPATH . 'assets/images', $imageName);
         }
 
         // 3. Prepare Data 
@@ -34,9 +42,10 @@ class Auth extends BaseController
             'full_name' => $this->request->getPost('full_name'),
             'email'      => $this->request->getPost('email'),
             'password'   => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'role'       => $this->request->getPost('role'),
+            'role'       => 'trainee',
             'phone_num' => $this->request->getPost('phone_num'),
-            'gender'    => $this->request->getPost('gender')
+            'gender'    => $this->request->getPost('gender'),
+            'profile_image' => $imageName
         ];
 
         // 4. Save 
@@ -46,6 +55,8 @@ class Auth extends BaseController
         session()->set([
             'user_id' => $userModel->getInsertID(),
             'username' => $data['full_name'],
+            'role'      => $data['role'],
+            'profile_image' => $data['profile_image'],
             'isLoggedIn' => true
         ]);
 
@@ -86,6 +97,7 @@ class Auth extends BaseController
                     'user_id'   => $user['id'],
                     'username'  => $user['full_name'],
                     'role'      => $user['role'],
+                    'profile_image'  => $user['profile_image'],
                     'isLoggedIn' => true
                 ]);
                 // Redirect the user to the dashboard page 
