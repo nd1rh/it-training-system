@@ -75,8 +75,8 @@
                                     Configuration
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="configureDropdown">
-                                    <li><a class="dropdown-item" href="/configure/trainee">Trainee</a></li>
-                                    <li><a class="dropdown-item" href="/configure/course_fee">Course Fee</a></li>
+                                    <li><a class="dropdown-item" href="<?= site_url('configure/trainee')?>">Trainee</a></li>
+                                    <li><a class="dropdown-item" href="<?= site_url('configure/course_fee')?>">Course Fee</a></li>
                                 </ul>
                             </li>
                             </li>

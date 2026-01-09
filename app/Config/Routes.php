@@ -19,3 +19,6 @@ $routes->post('/login-process', 'Auth::loginProcess');
 $routes->get('/logout', 'Auth::logout'); 
 // Protected Routes 
 $routes->get('/dashboard', 'Pages::dashboard', ['filter' => 'auth']); 
+
+// Trainee Routes
+$routes->get('configure/trainee', 'Trainee::index', ['filter' => 'auth']);

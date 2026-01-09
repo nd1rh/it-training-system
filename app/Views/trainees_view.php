@@ -13,100 +13,112 @@
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
-            margin-bottom: 20px; }
+            margin-bottom: 20px; 
+            background: white;
+            padding: 15px 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         .logo { 
             font-size: 24px; 
             font-weight: bold; 
-            color: #007bff; }
+            color: #333; }
         .nav { 
             display: flex; 
-            gap: 15px; }
+            gap: 20px; 
+            align-items: center; }
         .nav a { 
             text-decoration: none; 
             color: #333; 
-            font-weight: bold; }
+            font-weight: normal; }
+        
+        /* --- Dropdown Styles --- */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropbtn {
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 16px;
+            font-weight: normal;
+            color: #333;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 150px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border-radius: 4px;
+            right: 0; /* Aligns dropdown to the right */
+            border: 1px solid #ddd;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+            font-size: 14px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .dropdown-content a:last-child { border-bottom: none; }
+
+        .dropdown-content a:hover { background-color: #f8f9fa; color: #007bff; }
+
+        .dropdown:hover .dropdown-content { display: block; }
+        /* ------------------------ */
+
         .profile { 
-            background: #007bff; 
-            color: white; 
+            background: #eee; 
+            color: #555; 
             padding: 5px 10px; 
-            border-radius: 5px; }
-        .search-container { 
-            margin-bottom: 20px; }
-        .search-container input { 
-            padding: 10px; 
-            width: 300px; 
-            border: 1px solid #ddd; 
-            border-radius: 5px; }
-        table { 
-            width: 100%; 
-            border-collapse: collapse; 
-            background: white; 
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        th, td { 
-            padding: 12px; 
-            text-align: left; 
-            border-bottom: 1px solid #ddd; }
-        th { 
-            background: #007bff; 
-            color: white; 
-            font-weight: bold; }
-        .status { 
-            padding: 5px 10px; 
-            border-radius: 20px; 
-            color: white; 
-            font-size: 12px; }
-        .pending { 
-            background: #ffc107; }
-        .paid { 
-            background: #28a745; }
-        .btn { 
-            padding: 5px 10px; 
-            border: none; 
-            border-radius: 3px; 
-            cursor: pointer; 
-            margin-right: 5px; }
-        .btn-edit { 
-            background: #007bff; 
-            color: white; }
-        .btn-delete { 
-            background: #dc3545; 
-            color: white; }
-        @media (max-width: 768px) { .search-container input { width: 100%; } }
+            border-radius: 50%; }
+
+        /* Table and Search Styles preserved from your original code */
+        .search-container { margin-bottom: 20px; }
+        .search-container input { padding: 10px; width: 300px; border: 1px solid #ddd; border-radius: 5px; }
+        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #007bff; color: white; }
+        .status { padding: 5px 10px; border-radius: 20px; color: white; font-size: 12px; }
+        .pending { background: #ffc107; }
+        .paid { background: #28a745; }
+        .btn { padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer; margin-right: 5px; }
+        .btn-edit { background: #007bff; color: white; }
+        .btn-delete { background: #dc3545; color: white; }
     </style>
 </head>
 <body>
+
     <div class="header">
         <div class="logo">StartIT</div>
         <div class="nav">
-            <a href="#">Home</a>
-            <a href="#">Configuration</a>
+            <a href="dashboard.php">Dashboard</a>
+            
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Configuration ▾</a>
+                <div class="dropdown-content">
+                    <a href="trainees_view.php">Trainee</a>
+                    <a href="course_fee_view.php">Course Fee</a>
+                </div>
+            </div>
+            
             <a href="#">About</a>
+            <a href="logout.php">Logout</a>
             <div class="profile">👤</div>
         </div>
     </div>
 
-    <?php
-    // Database connection (replace with your credentials)
-    $pdo = new PDO('mysql:host=localhost;dbname=it_training_db', 'username', 'password');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-    // Handle search
-    $search = isset($_GET['search']) ? $_GET['search'] : '';
-    $sql = "SELECT id, name, email, gender, course, payment_status FROM trainees";
-    if ($search) {
-        $sql .= " WHERE name LIKE :search OR email LIKE :search OR course LIKE :search";
-    }
-    $sql .= " ORDER BY id DESC";
-    $stmt = $pdo->prepare($sql);
-    if ($search) {
-        $stmt->bindValue(':search', "%$search%");
-    }
-    $stmt->execute();
-    $trainees = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    ?>
+    <h1> Trainee Details </h1>
 
     <div class="search-container">
-        <input type="text" id="search" placeholder="Search by Name, Email or Course" value="<?php echo htmlspecialchars($search); ?>" onkeyup="searchTable()">
+        <input type="text" id="search" placeholder="Search by Name, Email or Course" onkeyup="searchTable()">
     </div>
 
     <table id="traineesTable">
@@ -122,24 +134,18 @@
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($trainees as $trainee): ?>
             <tr>
-                <td><?php echo htmlspecialchars($trainee['id']); ?></td>
-                <td><?php echo htmlspecialchars($trainee['name']); ?></td>
-                <td><?php echo htmlspecialchars($trainee['email']); ?></td>
-                <td><?php echo htmlspecialchars($trainee['gender']); ?></td>
-                <td><?php echo htmlspecialchars($trainee['course']); ?></td>
-                <td>
-                    <span class="status <?php echo strtolower($trainee['payment_status']); ?>">
-                        <?php echo htmlspecialchars($trainee['payment_status']); ?>
-                    </span>
-                </td>
+                <td>IT-101</td>
+                <td>Alex Rivera</td>
+                <td>a.rivera@email.com</td>
+                <td>Male</td>
+                <td>Full-Stack</td>
+                <td><span class="status paid">Paid</span></td>
                 <td>
                     <button class="btn btn-edit">Edit</button>
                     <button class="btn btn-delete">Delete</button>
                 </td>
             </tr>
-            <?php endforeach; ?>
         </tbody>
     </table>
 
@@ -151,7 +157,7 @@
             for (let i = 1; i < rows.length; i++) {
                 const cells = rows[i].getElementsByTagName('td');
                 let match = false;
-                for (let j = 0; j < cells.length - 1; j++) { // Exclude Actions column
+                for (let j = 0; j < cells.length - 1; j++) {
                     if (cells[j].textContent.toLowerCase().includes(input)) {
                         match = true;
                         break;
