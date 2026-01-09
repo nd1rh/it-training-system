@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>StartIT</title>
+
     <style>
-        body { 
-            font-family: Arial, sans-serif; 
-            margin: 20px; 
-            background: #f5f5f5; }
-        .header { 
-            display: flex; 
-            justify-content: space-between; 
-            align-items: center; 
-            margin-bottom: 20px; 
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background: #f5f5f5;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
             background: white;
             padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        .logo { 
-            font-size: 24px; 
-            font-weight: bold; 
-            color: #333; }
-        .nav { 
-            display: flex; 
-            gap: 20px; 
-            align-items: center; }
-        .nav a { 
-            text-decoration: none; 
-            color: #333; 
-            font-weight: normal; }
-        
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: normal;
+        }
+
         /* --- Dropdown Styles --- */
         .dropdown {
             position: relative;
@@ -51,10 +62,11 @@
             position: absolute;
             background-color: white;
             min-width: 150px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
             border-radius: 4px;
-            right: 0; /* Aligns dropdown to the right */
+            right: 0;
+            /* Aligns dropdown to the right */
             border: 1px solid #ddd;
         }
 
@@ -67,53 +79,100 @@
             border-bottom: 1px solid #f1f1f1;
         }
 
-        .dropdown-content a:last-child { border-bottom: none; }
+        .dropdown-content a:last-child {
+            border-bottom: none;
+        }
 
-        .dropdown-content a:hover { background-color: #f8f9fa; color: #007bff; }
+        .dropdown-content a:hover {
+            background-color: #f8f9fa;
+            color: #007bff;
+        }
 
-        .dropdown:hover .dropdown-content { display: block; }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
         /* ------------------------ */
 
-        .profile { 
-            background: #eee; 
-            color: #555; 
-            padding: 5px 10px; 
-            border-radius: 50%; }
+        .profile {
+            background: #eee;
+            color: #555;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+
+        h1 {
+            padding-top: 30px;
+            text-align: center;
+        }
 
         /* Table and Search Styles preserved from your original code */
-        .search-container { margin-bottom: 20px; }
-        .search-container input { padding: 10px; width: 300px; border: 1px solid #ddd; border-radius: 5px; }
-        table { width: 100%; border-collapse: collapse; background: white; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
-        th { background: #007bff; color: white; }
-        .status { padding: 5px 10px; border-radius: 20px; color: white; font-size: 12px; }
-        .pending { background: #ffc107; }
-        .paid { background: #28a745; }
-        .btn { padding: 5px 10px; border: none; border-radius: 3px; cursor: pointer; margin-right: 5px; }
-        .btn-edit { background: #007bff; color: white; }
-        .btn-delete { background: #dc3545; color: white; }
+        .search-container {
+            margin-bottom: 20px;
+        }
+
+        .search-container input {
+            padding: 10px;
+            width: 99%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #007bff;
+            color: white;
+        }
+
+        .status {
+            padding: 5px 10px;
+            border-radius: 20px;
+            color: white;
+            font-size: 12px;
+        }
+
+        .pending {
+            background: #ffc107;
+        }
+
+        .paid {
+            background: #28a745;
+        }
+
+        .btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .btn-edit {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-delete {
+            background: #dc3545;
+            color: white;
+        }
     </style>
 </head>
-<body>
 
-    <div class="header">
-        <div class="logo">StartIT</div>
-        <div class="nav">
-            <a href="dashboard.php">Dashboard</a>
-            
-            <div class="dropdown">
-                <a href="#" class="dropbtn">Configuration ▾</a>
-                <div class="dropdown-content">
-                    <a href="trainees_view.php">Trainee</a>
-                    <a href="course_fee_view.php">Course Fee</a>
-                </div>
-            </div>
-            
-            <a href="#">About</a>
-            <a href="logout.php">Logout</a>
-            <div class="profile">👤</div>
-        </div>
-    </div>
+<body>
 
     <h1> Trainee Details </h1>
 
@@ -134,18 +193,28 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <td>IT-101</td>
-                <td>Alex Rivera</td>
-                <td>a.rivera@email.com</td>
-                <td>Male</td>
-                <td>Full-Stack</td>
-                <td><span class="status paid">Paid</span></td>
-                <td>
-                    <button class="btn btn-edit">Edit</button>
-                    <button class="btn btn-delete">Delete</button>
-                </td>
-            </tr>
+            <?php if (!empty($trainees)): ?>
+                <?php foreach ($trainees as $row): ?>
+                    <tr>
+                        <td><?= $row['user_id'] ?></td>
+                        <td><?= $row['full_name'] ?></td>
+                        <td><?= $row['email'] ?></td>
+                        <td><?= $row['gender'] ?></td>
+                        <td><?= $row['course_enrolled'] ?></td>
+                        <td>
+                            <span class="status paid">Paid</span>
+                        </td>
+                        <td>
+                            <button class="btn btn-edit">Edit</button>
+                            <button class="btn btn-delete">Delete</button>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <tr>
+                    <td colspan="7">No trainees found in the database.</td>
+                </tr>
+            <?php endif; ?>
         </tbody>
     </table>
 
@@ -168,4 +237,5 @@
         }
     </script>
 </body>
+
 </html>
