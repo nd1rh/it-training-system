@@ -15,47 +15,50 @@ class Auth extends BaseController
 
     public function registerProcess()
     {
-
-        // 1. Validation Rules 
+        // 1. Validation Rules
         $rules = [
             'full_name' => 'required|min_length[2]',
-            'email'      => 'required|valid_email|is_unique[users.email]',
-            'password'   => 'required|min_length[8]',
-            'profile_image' => 'max_size[profile_image,2048]|is_image[profile_image]|mime_in[profile_image,image/jpg,image/jpeg,image/png]'
+            'email' => 'required|valid_email|is_unique[users.email]',
+            'password' => 'required|min_length[8]',
+            'profile_image' => 'max_size[profile_image,2048]|is_image[profile_image]|mime_in[profile_image,image/jpg,image/jpeg,image/png]',
+            'role' => 'required|in_list[trainee,admin]',
+            'gender' => 'required|in_list[male,female]'
         ];
-        // 2. Check Validation 
-        if (! $this->validate($rules)) {
+
+        // 2. Check Validation
+        if (!$this->validate($rules)) {
             return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
-        // Handle profile image upload
+        // 3. Handle Profile Image Upload
         $imageName = null;
         $imageFile = $this->request->getFile('profile_image');
+
         if ($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
             $imageName = $imageFile->getRandomName();
             $imageFile->move(FCPATH . 'assets/images', $imageName);
         }
 
-        // 3. Prepare Data 
+        // 4. Prepare Data
         $userModel = new UserModel();
         $data = [
             'full_name' => $this->request->getPost('full_name'),
-            'email'      => $this->request->getPost('email'),
-            'password'   => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'role'       => 'trainee',
+            'email' => $this->request->getPost('email'),
+            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'role' => $this->request->getPost('role'), // Save selected role
             'phone_num' => $this->request->getPost('phone_num'),
-            'gender'    => $this->request->getPost('gender'),
+            'gender' => $this->request->getPost('gender'),
             'profile_image' => $imageName
         ];
 
-        // 4. Save 
+        // 5. Save User
         $userModel->save($data);
 
-        // 5. Login User (Session) 
+        // 6. Set Session
         session()->set([
             'user_id' => $userModel->getInsertID(),
             'username' => $data['full_name'],
-            'role'      => $data['role'],
+            'role' => $data['role'],
             'profile_image' => $data['profile_image'],
             'isLoggedIn' => true
         ]);
@@ -65,53 +68,37 @@ class Auth extends BaseController
 
     public function login()
     {
-        // Load the header template 
         echo view('templates/header');
-
-        // Load the login form view 
         echo view('login_view');
-
-        // Load the footer template 
         echo view('templates/footer');
     }
+
     public function loginProcess()
     {
-        // Get form input values sent via POST 
         $role = $this->request->getPost('role');
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        // Load the User model to check the database 
         $userModel = new UserModel();
-
-        // Find the user by email 
         $user = $userModel->where('email', $email)->where('role', $role)->first();
 
-        // If a user with that email exists 
-        if ($user) {
-            // Verify the password using PHP's built-in password hashing 
-            if (password_verify($password, $user['password'])) {
-
-                // Store user data in session after successful login 
-                session()->set([
-                    'user_id'   => $user['id'],
-                    'username'  => $user['full_name'],
-                    'role'      => $user['role'],
-                    'profile_image'  => $user['profile_image'],
-                    'isLoggedIn' => true
-                ]);
-                // Redirect the user to the dashboard page 
-                return redirect()->to('/dashboard');
-            }
+        if ($user && password_verify($password, $user['password'])) {
+            session()->set([
+                'user_id' => $user['id'],
+                'username' => $user['full_name'],
+                'role' => $user['role'],
+                'profile_image' => $user['profile_image'],
+                'isLoggedIn' => true
+            ]);
+            return redirect()->to('/dashboard');
         }
-        // If email or password is incorrect, redirect back with an error message 
+
         return redirect()->back()->with('error', 'Invalid Role, Email or Password');
     }
+
     public function logout()
     {
-        // Destroy all session data (log out the user) 
         session()->destroy();
-        // Redirect back to the login page 
         return redirect()->to('/login');
     }
 }
