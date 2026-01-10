@@ -1899,3 +1899,94 @@ DEBUG - 2026-01-10 14:48:48 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-01-10 14:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-01-10 14:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-01-10 14:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:02:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:02:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:03:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 15:03:26 --> mysqli_sql_exception: Unknown column 'profile_pic' in 'field list' in C:\xampp\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `trainer...', 0)
+#1 C:\xampp\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trainer...')
+#2 C:\xampp\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trainer...')
+#3 C:\xampp\htdocs\it-training-system\system\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `trainer...', Array, false)
+#4 C:\xampp\htdocs\it-training-system\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\xampp\htdocs\it-training-system\system\BaseModel.php(1025): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\xampp\htdocs\it-training-system\system\Model.php(860): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\xampp\htdocs\it-training-system\app\Controllers\TrainerProfileController.php(43): CodeIgniter\Model->update('6', Array)
+#8 C:\xampp\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\TrainerProfileController->uploadPhoto()
+#9 C:\xampp\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainerProfileController))
+#10 C:\xampp\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#15 {main}
+CRITICAL - 2026-01-10 15:03:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_pic' in 'field list'
+[Method: POST, Route: profile/upload]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `trainers` SET `profile_pic` = :profile_pic:
+WHERE `trainers`.`trainer_id` IN :trainers.trainer_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\TrainerProfileController.php(43): CodeIgniter\Model->update('6', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TrainerProfileController->uploadPhoto()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainerProfileController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 15:03:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'profile_pic' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trainers` SET `profile_pic` = \'1768057406_226907dfbd1111886a67.jpg\'
+WHERE `trainers`.`trainer_id` IN (\'6\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trainers` SET `profile_pic` = \'1768057406_226907dfbd1111886a67.jpg\'
+WHERE `trainers`.`trainer_id` IN (\'6\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `trainers` SET `profile_pic` = :profile_pic:
+WHERE `trainers`.`trainer_id` IN :trainers.trainer_id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\TrainerProfileController.php(43): CodeIgniter\Model->update('6', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TrainerProfileController->uploadPhoto()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainerProfileController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 15:03:26 --> [Caused by] mysqli_sql_exception: Unknown column 'profile_pic' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('UPDATE `trainers` SET `profile_pic` = \'1768057406_226907dfbd1111886a67.jpg\'
+WHERE `trainers`.`trainer_id` IN (\'6\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `trainers` SET `profile_pic` = \'1768057406_226907dfbd1111886a67.jpg\'
+WHERE `trainers`.`trainer_id` IN (\'6\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `trainers` SET `profile_pic` = \'1768057406_226907dfbd1111886a67.jpg\'
+WHERE `trainers`.`trainer_id` IN (\'6\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2521): CodeIgniter\Database\BaseConnection->query('UPDATE `trainers` SET `profile_pic` = :profile_pic:
+WHERE `trainers`.`trainer_id` IN :trainers.trainer_id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1025): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(860): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\TrainerProfileController.php(43): CodeIgniter\Model->update('6', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TrainerProfileController->uploadPhoto()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TrainerProfileController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 15:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:25:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:26:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:26:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:26:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:27:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:27:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 15:27:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

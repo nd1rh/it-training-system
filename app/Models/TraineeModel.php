@@ -15,7 +15,8 @@ class TraineeModel extends Model
         'gender',
         'phone_num',
         'date_of_birth',
-        'created_at'
+        'created_at',
+        'profile_pic'
     ];
     protected $useTimestamps = true;
     protected $createdField  = 'created_at';

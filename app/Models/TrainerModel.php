@@ -14,7 +14,8 @@ class TrainerModel extends Model
         'password',
         'gender',
         'specialization',
-        'experience_years'
+        'experience_years',
+        'profile_pic'
     ];
     protected $useTimestamps = false;
 
