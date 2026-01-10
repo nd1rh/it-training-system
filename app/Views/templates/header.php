@@ -53,8 +53,8 @@
                                     Configuration
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="configureDropdown">
-                                    <li><a class="dropdown-item" href="<?= site_url('configure/trainee')?>">Trainee</a></li>
-                                    <li><a class="dropdown-item" href="<?= site_url('configure/course_fee')?>">Course Fee</a></li>
+                                    <li><a class="dropdown-item" href="<?= site_url('configure/trainee') ?>">Trainee</a></li>
+                                    <li><a class="dropdown-item" href="<?= site_url('configure/course_fee') ?>">Course Fee</a></li>
                                 </ul>
                             </li>
                             </li>
@@ -69,7 +69,15 @@
                             </li>
 
                         <?php endif; ?>
-                        <li class="nav-item"><a class="nav-link" href="/logout">Logout</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Profile
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+                                <li><a class="dropdown-item" href="/myprofile">My Profile</a></li>
+                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            </ul>
+                        </li>
 
                     <?php else: ?>
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>

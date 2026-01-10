@@ -8,11 +8,10 @@ use CodeIgniter\Router\RouteCollection;
 
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'HomeController::index');
-$routes->get('courses/enrolled', 'CoursesController::enrolled');
-$routes->get('courses/in-progress', 'CoursesController::inProgress');
-$routes->get('courses/completed', 'CoursesController::completed');
+$routes->get('/about/company', 'Pages::about');
 $routes->get('courses/detail/(:num)', 'CoursesController::detail/$1');
-$routes->get('/about', 'Pages::about');
+$routes->get('courses/search', 'CoursesController::search');
+$routes->get('/trainer', 'TrainerController::trainer');
 
 // Auth Routes 
 $routes->get('/register', 'Auth::register');
@@ -22,8 +21,12 @@ $routes->post('/login-process', 'Auth::loginProcess');
 $routes->get('/logout', 'Auth::logout');
 
 // Protected Routes 
-$routes->get('/dashboard', 'Pages::dashboard', ['filter' => 'auth']);
+$routes->get('dashboard', 'CoursesController::dashboard', ['filter' => 'auth']);
+$routes->get('courses/enrolled', 'CoursesController::enrolled', ['filter' => 'auth']);
+$routes->get('courses/in-progress', 'CoursesController::inProgress', ['filter' => 'auth']);
+$routes->get('courses/completed', 'CoursesController::completed', ['filter' => 'auth']);
+$routes->get('courses/certificate/(:num)', 'CoursesController::certificate/$1', ['filter' => 'auth']);
 
-// Trainee Routes
-$routes->get('configure/trainee', 'TraineeController::index');
-$routes->get('configure/trainee/search', 'TraineeController::search');
+// Trainer Menu
+$routes->get('configure/trainee', 'TraineeController::index', ['filter' => 'auth']);
+$routes->get('configure/trainee/search', 'TraineeController::search', ['filter' => 'auth']);

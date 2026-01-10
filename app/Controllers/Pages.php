@@ -17,10 +17,4 @@ class Pages extends BaseController
         echo view('templates/footer'); 
     }
 
-    public function dashboard() 
-    { 
-        echo view('templates/header'); 
-        echo view('dashboard_view'); 
-        echo view('templates/footer'); 
-    }
 }
