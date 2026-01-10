@@ -9,13 +9,10 @@ use CodeIgniter\Router\RouteCollection;
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'HomeController::index');
 $routes->get('/about/company', 'Pages::about');
+$routes->get('about/web_policy', 'Pages::webPolicy');
 $routes->get('courses/detail/(:num)', 'CoursesController::detail/$1');
-<<<<<<< HEAD
 $routes->get('courses/search', 'CoursesController::search');
 $routes->get('/trainer', 'TrainerController::trainer');
-=======
-$routes->get('about/web_policy', 'Pages::webPolicy');
->>>>>>> 26f0d794130b19c3d28bcc61e4df515b13ff50e7
 
 // Auth Routes 
 $routes->get('/register', 'Auth::register');
