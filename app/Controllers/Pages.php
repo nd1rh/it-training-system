@@ -16,12 +16,7 @@ class Pages extends BaseController
         echo view('about_view'); 
         echo view('templates/footer'); 
     }
-    public function contact()
-    {
-        echo view('templates/header');
-        echo view('contact_view');
-        echo view('templates/footer');
-    }
+
     public function dashboard() 
     { 
         echo view('templates/header'); 

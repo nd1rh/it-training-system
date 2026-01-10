@@ -153,3 +153,1384 @@ DEBUG - 2026-01-10 06:49:46 --> Session: Class initialized using 'CodeIgniter\Se
 DEBUG - 2026-01-10 06:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-01-10 06:50:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 DEBUG - 2026-01-10 06:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:51:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:54:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 06:57:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:00:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:03:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:06:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:06:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:13:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:16:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:19:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:21:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:21:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:22:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:22:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:22:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:27:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:28:02 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:28:02 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:28:02 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:28:02 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:28:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-10 07:28:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "courses/detail_view.php"
+[Method: GET, Route: courses/detail/1]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('courses/detail_view.php')
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('courses/detail_view', [], true)
+ 3 APPPATH\Controllers\CoursesController.php(69): view('courses/detail_view', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:30:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:30:11 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:30:11 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:30:11 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:30:11 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:30:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:30:45 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:30:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/in-progress]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:30:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:30:45 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-10 07:33:34 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CourseEnrollmentModel::alias
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\CoursesController.php(23): CodeIgniter\Model->__call('alias', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:36:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:36:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:36:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-10 07:36:55 --> CodeIgniter\Exceptions\BadMethodCallException: Call to undefined method App\Models\CourseEnrollmentModel::alias
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Model.php on line 927.
+ 1 APPPATH\Controllers\CoursesController.php(23): CodeIgniter\Model->__call('alias', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:39:17 --> mysqli_sql_exception: Table 'it_training_db.ce' doesn't exist in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#6 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#10 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#11 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#12 {main}
+CRITICAL - 2026-01-10 07:39:17 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_training_db.ce' doesn't exist
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 APPPATH\Controllers\CoursesController.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 4 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 5 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 8 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 9 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:39:17 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'it_training_db.ce' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 APPPATH\Controllers\CoursesController.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:39:17 --> [Caused by] mysqli_sql_exception: Table 'it_training_db.ce' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `ce`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 APPPATH\Controllers\CoursesController.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:43:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:43:43 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:43:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:43:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:43:43 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:43:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:43:55 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:43:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/in-progress]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:43:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:43:55 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'In Progress\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(41): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->inProgress()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:45:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:45:07 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:45:07 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:45:07 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:45:07 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:45:29 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:45:29 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:45:29 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:45:29 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:47:55 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:47:55 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/enrolled]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:47:55 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:47:55 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(26): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->enrolled()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:48:26 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:48:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/completed]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:48:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:48:26 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:48:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:48:37 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:48:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/completed]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:48:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:48:37 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:50:51 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:50:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/completed]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:50:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:50:51 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:55:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:55:05 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:55:05 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/completed]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:55:05 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:55:05 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:55:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:55:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2026-01-10 07:55:09 --> mysqli_sql_exception: Unknown column 'ce.status' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`cou...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`cou...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`cou...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`cou...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+CRITICAL - 2026-01-10 07:55:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+[Method: GET, Route: courses/completed]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:55:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 8 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 9 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+13 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-10 07:55:09 --> [Caused by] mysqli_sql_exception: Unknown column 'ce.status' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = \'Completed\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `c`.`course_id`, `c`.`course_name`, `c`.`course_desc`, `ce`.`status`
+FROM `course_enrollments`
+JOIN `courses` `c` ON `c`.`course_id` = `ce`.`course_id`
+WHERE `ce`.`trainee_id` IS NULL
+AND `ce`.`status` = :ce.status:', [...], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Controllers\CoursesController.php(56): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->completed()
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-10 07:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:56:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:56:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:56:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:57:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 07:57:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 08:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 08:01:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 08:01:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-10 08:01:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
