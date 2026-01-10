@@ -17,4 +17,9 @@ class TrainerModel extends Model
         'experience_years'
     ];
     protected $useTimestamps = false;
+
+    public function getTrainerProfile($id)
+    {
+        return $this->where('trainer_id', $id)->first();
+    }
 }

@@ -73,9 +73,12 @@
                             <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Profile
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="profileDropdown">
-                                <li><a class="dropdown-item" href="/myprofile">My Profile</a></li>
-                                <li><a class="dropdown-item" href="/logout">Logout</a></li>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="<?= base_url('profile') ?>">My Profile</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a></li>
                             </ul>
                         </li>
 
