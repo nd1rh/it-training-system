@@ -1,10 +1,52 @@
 <?php
+
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class TraineeModel extends Model
 {
-    protected $table = 'users'; // Use the table name from your dummy data
-    protected $primaryKey = 'user_id';
-    protected $allowedFields = ['full_name', 'email', 'password', 'role', 'gender', 'profile_image', 'phone_num', 'course_enrolled'];
+    protected $table = 'trainees';
+    protected $primaryKey = 'trainee_id';
+    protected $allowedFields = [
+        'full_name',
+        'email',
+        'password',
+        'gender',
+        'phone_num',
+        'date_of_birth',
+        'created_at'
+    ];
+    protected $useTimestamps = true;
+    protected $createdField  = 'created_at';
+    protected $updatedField  = '';
+
+    // Get trainees with course and payment info, optional search keyword
+    public function getTraineesWithDetails($keyword = null)
+    {
+        $builder = $this->db->table('trainees t');
+
+        $builder->select('
+            t.trainee_id,
+            t.full_name,
+            t.email,
+            t.gender,
+            c.course_name,
+            p.payment_status
+        ');
+
+        $builder->join('course_enrollments ce', 'ce.trainee_id = t.trainee_id', 'left');
+        $builder->join('courses c', 'c.course_id = ce.course_id', 'left');
+        $builder->join('payments p', 'p.course_enroll_id = ce.course_enroll_id', 'left');
+
+        if ($keyword) {
+            $builder->groupStart()
+                ->like('t.full_name', $keyword)
+                ->orLike('t.email', $keyword)
+                ->orLike('c.course_name', $keyword)
+                ->groupEnd();
+        }
+
+        return $builder->get()->getResultArray();
+    }
 }

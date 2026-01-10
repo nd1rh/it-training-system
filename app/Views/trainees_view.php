@@ -3,238 +3,116 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>StartIT</title>
-
+    <title>Trainee Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background: #f5f5f5;
+        .badge-paid {
+            background-color: #198754;
         }
 
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            background: white;
-            padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .nav {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: normal;
-        }
-
-        /* --- Dropdown Styles --- */
-        .dropdown {
-            position: relative;
-            display: inline-block;
-        }
-
-        .dropbtn {
-            cursor: pointer;
-            border: none;
-            background: none;
-            font-size: 16px;
-            font-weight: normal;
-            color: #333;
-        }
-
-        .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: white;
-            min-width: 150px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 4px;
-            right: 0;
-            /* Aligns dropdown to the right */
-            border: 1px solid #ddd;
-        }
-
-        .dropdown-content a {
-            color: #333;
-            padding: 10px 15px;
-            text-decoration: none;
-            display: block;
-            font-size: 14px;
-            border-bottom: 1px solid #f1f1f1;
-        }
-
-        .dropdown-content a:last-child {
-            border-bottom: none;
-        }
-
-        .dropdown-content a:hover {
-            background-color: #f8f9fa;
-            color: #007bff;
-        }
-
-        .dropdown:hover .dropdown-content {
-            display: block;
-        }
-
-        /* ------------------------ */
-
-        .profile {
-            background: #eee;
-            color: #555;
-            padding: 5px 10px;
-            border-radius: 50%;
-        }
-
-        h1 {
-            padding-top: 30px;
-            text-align: center;
-        }
-
-        /* Table and Search Styles preserved from your original code */
-        .search-container {
-            margin-bottom: 20px;
-        }
-
-        .search-container input {
-            padding: 10px;
-            width: 99%;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            background: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        th,
-        td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-
-        th {
-            background: #007bff;
-            color: white;
-        }
-
-        .status {
-            padding: 5px 10px;
-            border-radius: 20px;
-            color: white;
-            font-size: 12px;
-        }
-
-        .pending {
-            background: #ffc107;
-        }
-
-        .paid {
-            background: #28a745;
-        }
-
-        .btn {
-            padding: 5px 10px;
-            border: none;
-            border-radius: 3px;
-            cursor: pointer;
-            margin-right: 5px;
-        }
-
-        .btn-edit {
-            background: #007bff;
-            color: white;
-        }
-
-        .btn-delete {
-            background: #dc3545;
-            color: white;
+        .badge-unpaid {
+            background-color: #dc3545;
         }
     </style>
 </head>
 
 <body>
+    <div class="container mt-5">
+        <h1 class="page-title mb-4">Trainee Details</h1>
 
-    <h1> Trainee Details </h1>
+        <input type="text" id="search" class="form-control mb-3" placeholder="Search by Name, Email or Course">
 
-    <div class="search-container">
-        <input type="text" id="search" placeholder="Search by Name, Email or Course" onkeyup="searchTable()">
+        <table class="table table-bordered table-hover">
+            <thead class="table-dark">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                    <th>Course</th>
+                    <th>Payment Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="traineeData">
+                <?php if (!empty($trainees)): ?>
+                    <?php foreach ($trainees as $row): ?>
+                        <?php $status = $row['payment_status'] ?? 'UNPAID'; ?>
+                        <tr>
+                            <td><?= esc($row['trainee_id']) ?></td>
+                            <td><?= esc($row['full_name']) ?></td>
+                            <td><?= esc($row['email']) ?></td>
+                            <td><?= esc($row['gender'] ?? '-') ?></td>
+                            <td><?= esc($row['course_name'] ?? '-') ?></td>
+                            <td>
+                                <?php if ($status === 'PAID'): ?>
+                                    <span class="badge badge-paid">Paid</span>
+                                <?php else: ?>
+                                    <span class="badge badge-unpaid">Unpaid</span>
+                                <?php endif; ?>
+                            </td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                <?php else: ?>
+                    <tr>
+                        <td colspan="7" class="text-center">No trainees found.</td>
+                    </tr>
+                <?php endif; ?>
+            </tbody>
+        </table>
     </div>
 
-    <table id="traineesTable">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Gender</th>
-                <th>Course</th>
-                <th>Payment Status</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php if (!empty($trainees)): ?>
-                <?php foreach ($trainees as $row): ?>
-                    <tr>
-                        <td><?= $row['user_id'] ?></td>
-                        <td><?= $row['full_name'] ?></td>
-                        <td><?= $row['email'] ?></td>
-                        <td><?= $row['gender'] ?></td>
-                        <td><?= $row['course_enrolled'] ?></td>
-                        <td>
-                            <span class="status paid">Paid</span>
-                        </td>
-                        <td>
-                            <button class="btn btn-edit">Edit</button>
-                            <button class="btn btn-delete">Delete</button>
-                        </td>
-                    </tr>
-                <?php endforeach; ?>
-            <?php else: ?>
-                <tr>
-                    <td colspan="7">No trainees found in the database.</td>
-                </tr>
-            <?php endif; ?>
-        </tbody>
-    </table>
-
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
-        function searchTable() {
-            const input = document.getElementById('search').value.toLowerCase();
-            const table = document.getElementById('traineesTable');
-            const rows = table.getElementsByTagName('tr');
-            for (let i = 1; i < rows.length; i++) {
-                const cells = rows[i].getElementsByTagName('td');
-                let match = false;
-                for (let j = 0; j < cells.length - 1; j++) {
-                    if (cells[j].textContent.toLowerCase().includes(input)) {
-                        match = true;
-                        break;
+        $(document).ready(function() {
+            $('#search').keyup(function() {
+                let keyword = $(this).val();
+
+                $.ajax({
+                    url: "<?= base_url('configure/trainee/search') ?>",
+                    method: "GET",
+                    data: {
+                        keyword: keyword
+                    },
+                    dataType: "json",
+                    success: function(data) {
+                        let html = '';
+
+                        if (data.length > 0) {
+                            data.forEach(function(row) {
+                                let status = row.payment_status ?? 'UNPAID';
+                                let badge = (status === 'PAID') ?
+                                    '<span class="badge badge-paid">Paid</span>' :
+                                    '<span class="badge badge-unpaid">Unpaid</span>';
+
+                                html += `
+                            <tr>
+                                <td>${row.trainee_id}</td>
+                                <td>${row.full_name}</td>
+                                <td>${row.email}</td>
+                                <td>${row.gender ?? '-'}</td>
+                                <td>${row.course_name ?? '-'}</td>
+                                <td>${badge}</td>
+                                <td>
+                                    <a href="#" class="btn btn-sm btn-primary">Edit</a>
+                                    <a href="#" class="btn btn-sm btn-danger">Delete</a>
+                                </td>
+                            </tr>
+                        `;
+                            });
+                        } else {
+                            html = `<tr><td colspan="7" class="text-center">No trainees found.</td></tr>`;
+                        }
+
+                        $('#traineeData').html(html);
                     }
-                }
-                rows[i].style.display = match ? '' : 'none';
-            }
-        }
+                });
+            });
+        });
     </script>
 </body>
 

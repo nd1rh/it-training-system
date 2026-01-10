@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <title>StartIT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
 
     <style>
         body {
-            padding-top: 100px;
+            padding-top: 70px;
         }
     </style>
 </head>
@@ -34,7 +33,7 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="directoryDropdown">
                                     <li><a class="dropdown-item" href="/directory/course">Courses</a></li>
-                                    <li><a class="dropdown-item" href="/directory/tutor">Tutors</a></li>
+                                    <li><a class="dropdown-item" href="/directory/trainer">Trainers</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
@@ -46,29 +45,8 @@
                                     <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle d-flex align-items-center"
-                                    href="#"
-                                    id="profileDropdown"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false">
 
-                                    <img src="<?= session()->get('profile_image')
-                                                    ? base_url('assets/images/' . session()->get('profile_image'))
-                                                    : base_url('assets/images/default-avatar.png') ?>"
-                                        class="rounded-circle"
-                                        width="25"
-                                        height="25"
-                                        alt="Profile">
-                                </a>
-
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
-                                    <li><a class="dropdown-item" href="/profile/my_profile">My Profile</a></li>
-                                    <li><a class="dropdown-item" href="/logout">Logout</a></li>
-                                </ul>
-                            </li>
-                        <?php elseif (session()->get('role') === 'admin'): ?>
+                        <?php elseif (session()->get('role') === 'trainer'): ?>
                             <li class="nav-item"><a class="nav-link" href="/dashboard">Dashboard</a></li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="configureDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -95,7 +73,7 @@
 
                     <?php else: ?>
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="/trainer">Trainer</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/trainer">Trainer Directory</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 About

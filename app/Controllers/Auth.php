@@ -2,10 +2,13 @@
 
 namespace App\Controllers;
 
-use App\Models\UserModel;
+use App\Models\TraineeModel;
+use App\Models\TrainerModel;
 
 class Auth extends BaseController
 {
+    /* ===================== REGISTER ===================== */
+
     public function register()
     {
         echo view('templates/header');
@@ -15,56 +18,71 @@ class Auth extends BaseController
 
     public function registerProcess()
     {
-        // 1. Validation Rules
         $rules = [
+            'role'      => 'required|in_list[trainee,trainer]',
             'full_name' => 'required|min_length[2]',
-            'email' => 'required|valid_email|is_unique[users.email]',
-            'password' => 'required|min_length[8]',
-            'profile_image' => 'max_size[profile_image,2048]|is_image[profile_image]|mime_in[profile_image,image/jpg,image/jpeg,image/png]',
-            'role' => 'required|in_list[trainee,admin]',
-            'gender' => 'required|in_list[male,female]'
+            'email'     => 'required|valid_email',
+            'password'  => 'required|min_length[8]',
+            'gender'    => 'required|in_list[male,female]'
         ];
 
-        // 2. Check Validation
         if (!$this->validate($rules)) {
-            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
+            return redirect()->back()
+                ->withInput()
+                ->with('errors', $this->validator->getErrors());
         }
 
-        // 3. Handle Profile Image Upload
-        $imageName = null;
-        $imageFile = $this->request->getFile('profile_image');
+        $role = $this->request->getPost('role');
 
-        if ($imageFile && $imageFile->isValid() && !$imageFile->hasMoved()) {
-            $imageName = $imageFile->getRandomName();
-            $imageFile->move(FCPATH . 'assets/images', $imageName);
-        }
-
-        // 4. Prepare Data
-        $userModel = new UserModel();
         $data = [
             'full_name' => $this->request->getPost('full_name'),
-            'email' => $this->request->getPost('email'),
-            'password' => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
-            'role' => $this->request->getPost('role'), // Save selected role
-            'phone_num' => $this->request->getPost('phone_num'),
-            'gender' => $this->request->getPost('gender'),
-            'profile_image' => $imageName
+            'email'     => $this->request->getPost('email'),
+            'password'  => password_hash($this->request->getPost('password'), PASSWORD_DEFAULT),
+            'gender'    => $this->request->getPost('gender')
         ];
 
-        // 5. Save User
-        $userModel->save($data);
+        if ($role === 'trainee') {
 
-        // 6. Set Session
+            $traineeModel = new TraineeModel();
+
+            // Check unique email
+            if ($traineeModel->where('email', $data['email'])->first()) {
+                return redirect()->back()
+                    ->withInput()
+                    ->with('errors', ['Email already registered as trainee']);
+            }
+
+            $data['phone_num'] = $this->request->getPost('phone_num');
+
+            $traineeModel->insert($data);
+            $userId = $traineeModel->getInsertID();
+        } else {
+
+            $trainerModel = new TrainerModel();
+
+            // Check unique email
+            if ($trainerModel->where('email', $data['email'])->first()) {
+                return redirect()->back()
+                    ->withInput()
+                    ->with('errors', ['Email already registered as trainer']);
+            }
+
+            $trainerModel->insert($data);
+            $userId = $trainerModel->getInsertID();
+        }
+
+        // Create session
         session()->set([
-            'user_id' => $userModel->getInsertID(),
-            'username' => $data['full_name'],
-            'role' => $data['role'],
-            'profile_image' => $data['profile_image'],
+            'user_id'    => $userId,
+            'full_name'  => $data['full_name'],
+            'role'       => $role,
             'isLoggedIn' => true
         ]);
 
         return redirect()->to('/dashboard');
     }
+
+    /* ===================== LOGIN ===================== */
 
     public function login()
     {
@@ -75,26 +93,37 @@ class Auth extends BaseController
 
     public function loginProcess()
     {
-        $role = $this->request->getPost('role');
-        $email = $this->request->getPost('email');
+        $role     = $this->request->getPost('role');
+        $email    = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 
-        $userModel = new UserModel();
-        $user = $userModel->where('email', $email)->where('role', $role)->first();
-
-        if ($user && password_verify($password, $user['password'])) {
-            session()->set([
-                'user_id' => $user['user_id'],
-                'username' => $user['full_name'],
-                'role' => $user['role'],
-                'profile_image' => $user['profile_image'],
-                'isLoggedIn' => true
-            ]);
-            return redirect()->to('/dashboard');
+        if (!$role || !$email || !$password) {
+            return redirect()->back()->with('error', 'All fields are required');
         }
 
-        return redirect()->back()->with('error', 'Invalid Role, Email or Password');
+        if ($role === 'trainee') {
+            $model = new TraineeModel();
+            $user  = $model->where('email', $email)->first();
+        } else {
+            $model = new TrainerModel();
+            $user  = $model->where('email', $email)->first();
+        }
+
+        if (!$user || !password_verify($password, $user['password'])) {
+            return redirect()->back()->with('error', 'Invalid Email or Password');
+        }
+
+        session()->set([
+            'user_id'    => $user[$role . '_id'],
+            'full_name'  => $user['full_name'],
+            'role'       => $role,
+            'isLoggedIn' => true
+        ]);
+
+        return redirect()->to('/dashboard');
     }
+
+    /* ===================== LOGOUT ===================== */
 
     public function logout()
     {
