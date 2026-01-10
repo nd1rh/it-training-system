@@ -12,7 +12,7 @@ $routes->get('courses/enrolled', 'CoursesController::enrolled');
 $routes->get('courses/in-progress', 'CoursesController::inProgress');
 $routes->get('courses/completed', 'CoursesController::completed');
 $routes->get('courses/detail/(:num)', 'CoursesController::detail/$1');
-$routes->get('/about', 'Pages::about');
+$routes->get('about/web_policy', 'Pages::webPolicy');
 
 // Auth Routes 
 $routes->get('/register', 'Auth::register');
