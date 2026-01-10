@@ -142,7 +142,7 @@
                 <p>UI/UX Designer</p>
             </div>
             <div class="col-md-3 team-member">
-                <img src="<?= base_url('assets/images/dijah.jpg') ?>" alt="Zukhruful Khadijah">
+                <img src="<?= base_url('assets/images/dijah.jpeg') ?>" alt="Zukhruful Khadijah">
                 <h5>Zukhruful Khadijah Amni binti Jamnul Azhar</h5>
                 <p>System Analyst</p>
             </div>

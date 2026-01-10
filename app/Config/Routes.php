@@ -37,4 +37,4 @@ $routes->get('configure/course_fee', 'CourseFeeController::index', ['filter' => 
 $routes->get('configure/course_fee/search', 'CourseFeeController::search', ['filter' => 'auth']);
 
 // Trainer Profile Route
-$routes->get('profile', 'TrainerProfileController::index', ['filter' => 'auth']);
+$routes->get('trainerprofile', 'TrainerProfileController::index', ['filter' => 'auth']);
