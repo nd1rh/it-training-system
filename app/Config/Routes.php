@@ -31,3 +31,7 @@ $routes->get('courses/certificate/(:num)', 'CoursesController::certificate/$1', 
 // Trainer Menu
 $routes->get('configure/trainee', 'TraineeController::index', ['filter' => 'auth']);
 $routes->get('configure/trainee/search', 'TraineeController::search', ['filter' => 'auth']);
+
+// Course Fee Menu
+$routes->get('configure/course_fee', 'CourseFeeController::index', ['filter' => 'auth']);
+$routes->get('configure/course_fee/search', 'CourseFeeController::search', ['filter' => 'auth']);
