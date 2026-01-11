@@ -7,8 +7,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        body { background-color: #f4f7f6; }
-        
+        body {
+            background-color: #f4f7f6;
+        }
+
         .profile-container {
             max-width: 600px;
             margin: 50px auto;
@@ -90,14 +92,11 @@
             <h1>MyProfile</h1>
         </div>
 
-    <div class="avatar-wrapper">
-        <div class="profile-avatar">
-            <i class="bi bi-person-fill"></i>
+        <div class="avatar-circle">
+            <img
+                src="<?= base_url($trainer['profile_pic'] ?: 'uploads/trainers/default.png') ?>"
+                alt="Profile">
         </div>
-        <div class="edit-icon">
-            <i class="bi bi-pencil-fill"></i>
-        </div>
-    </div>
 
         <div class="trainer-name">
             <?= esc($trainer['full_name']) ?>

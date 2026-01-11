@@ -1,0 +1,532 @@
+/* =========================
+   Global Layout
+========================= */
+body {
+    min-height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #f8f9fa, #eef2f7);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   Page Title
+========================= */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    color: #6c757d;
+    margin-bottom: 35px;
+}
+
+/* =========================
+   Search Bar
+========================= */
+#searchInput {
+    max-width: 420px;
+    margin: 0 auto 40px;
+    padding: 12px 15px;
+    border-radius: 30px;
+    border: 1px solid #ced4da;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#searchInput:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* =========================
+   Course Card
+========================= */
+.course-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.course-box {
+    height: 100%;
+    background: #ffffff;
+    padding: 25px 20px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Course Text
+========================= */
+.course-box h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #0d6efd;
+    margin-bottom: 10px;
+}
+
+.course-box p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+/* =========================
+   Empty Message
+========================= */
+.no-course {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-top: 40px;
+}
+
+/* =========================
+   Course Image
+========================= */
+.course-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   Page Layout
+========================= */
+body {
+    padding-top: 80px;
+    background: linear-gradient(135deg, #f1f3f6, #e9edf3);
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================
+   Page Title
+========================= */
+.page-title {
+    font-weight: 700;
+    color: #212529;
+    margin-bottom: 50px;
+}
+
+/* =========================
+   Trainer Card
+========================= */
+.trainer-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 30px 20px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.trainer-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================
+   Profile Image
+========================= */
+.trainer-avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #0d6efd;
+    margin-bottom: 15px;
+    background-color: #f1f3f6;
+}
+
+/* =========================
+   Trainer Info
+========================= */
+.trainer-card h4 {
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #212529;
+}
+
+.trainer-card p {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-bottom: 6px;
+}
+
+/* =========================
+   About Page Layout
+========================= */
+.about-body {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f4f6f9, #eef2f7);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+}
+
+/* =========================
+   Headings
+========================= */
+.about-title {
+    font-weight: 800;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.about-lead {
+    font-size: 1.15rem;
+    color: #6c757d;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+/* =========================
+   Mission / Vision / Values
+========================= */
+.card-feature {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px 25px;
+    height: 100%;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.card-feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+}
+
+.card-feature h3 {
+    color: #0d6efd;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.card-feature p {
+    color: #6c757d;
+    font-size: 0.95rem;
+}
+
+/* =========================
+   Team Section
+========================= */
+.team-title {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.team-member {
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-8px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #0d6efd;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
+}
+
+.team-member h5 {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.team-member p {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #0d6efd;
+}
+
+/* =========================
+   Responsive
+========================= */
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2.2rem;
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* =========================
+   Web Policy Page
+========================= */
+.web-policy-body {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f4f6f9, #eef2f7);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #212529;
+    min-height: 100vh;
+}
+
+/* Page Title */
+.page-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0d6efd;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Section Headings */
+.web-policy-section h4 {
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #0d6efd;
+    margin-bottom: 12px;
+}
+
+/* Section Paragraphs */
+.web-policy-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #495057;
+}
+
+/* Section Card Style */
+.web-policy-section {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 25px 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.web-policy-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .web-policy-section h4 {
+        font-size: 1.15rem;
+    }
+}
+
+/* =========================
+   Register Page
+========================= */
+.register-body {
+    background-color: #f8f9fa;
+    padding-bottom: 100px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card */
+.register-card {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+/* Page Title */
+.register-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+/* Fieldset */
+.register-fieldset {
+    border: 1px solid #dee2e6;
+    padding: 20px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.register-fieldset:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+.register-fieldset legend {
+    width: auto;
+    padding: 0 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #0d6efd;
+}
+
+/* Inputs */
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="password"] {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.register-card input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Radio Buttons */
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Submit Button */
+.register-card .btn-primary {
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.register-card .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* Links */
+.register-card a {
+    color: #0d6efd;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.register-card a:hover {
+    text-decoration: underline;
+}
+
+/* Alert Messages */
+.alert-danger {
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .register-title {
+        font-size: 1.7rem;
+    }
+
+    .register-fieldset {
+        padding: 15px 10px;
+    }
+}
+
+/* =========================
+   Login Page
+========================= */
+.login-body {
+    background-color: #f8f9fa;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 100px;
+}
+
+/* Card */
+.login-card {
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+/* Page Title */
+.login-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #0d6efd;
+}
+
+/* Inputs */
+.login-card input[type="email"],
+.login-card input[type="password"] {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.login-card input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+}
+
+/* Radio Buttons */
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Submit Button */
+.login-card .btn-primary {
+    border-radius: 8px;
+    font-size: 1.1rem;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.login-card .btn-primary:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+/* Links */
+.login-card a {
+    color: #0d6efd;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.login-card a:hover {
+    text-decoration: underline;
+}
+
+/* Alerts */
+.alert-danger {
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .login-title {
+        font-size: 1.7rem;
+    }
+}
