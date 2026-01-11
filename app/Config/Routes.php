@@ -38,8 +38,7 @@ $routes->get('configure/course_fee/search', 'CourseFeeController::search', ['fil
 
 // Trainer Profile Route
 $routes->get('profile', 'TrainerProfileController::index', ['filter' => 'auth']);
-$routes->post('profile/upload', 'TrainerProfileController::uploadPhoto', ['filter' => 'auth']);
 
-// Trainee Profile 
+// ADD THIS FOR TRAINEE:
 $routes->get('trainee/profile', 'TraineeProfileController::index', ['filter' => 'auth']);
 $routes->post('trainee/profile/upload', 'TraineeProfileController::uploadPhoto', ['filter' => 'auth']);

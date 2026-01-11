@@ -7,10 +7,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
-        body {
-            background-color: #f4f7f6;
-        }
-
+        body { background-color: #f4f7f6; }
+        
         .profile-container {
             max-width: 600px;
             margin: 50px auto;
@@ -92,23 +90,14 @@
             <h1>MyProfile</h1>
         </div>
 
-        <div class="avatar-wrapper">
-            <form action="<?= base_url('profile/upload') ?>" method="post" enctype="multipart/form-data" id="photoForm">
-                <div class="profile-avatar">
-                    <?php if (!empty($trainer['profile_pic']) && file_exists('uploads/profile_pics/' . $trainer['profile_pic'])): ?>
-                        <img src="<?= base_url('uploads/profile_pics/' . $trainer['profile_pic']) ?>"
-                            style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
-                    <?php else: ?>
-                        <i class="bi bi-person-fill"></i>
-                    <?php endif; ?>
-                </div>
-
-                <label for="fileInput" class="edit-icon" style="cursor: pointer;">
-                    <i class="bi bi-pencil-fill"></i>
-                </label>
-                <input type="file" name="profile_pic" id="fileInput" style="display: none;" onchange="document.getElementById('photoForm').submit();">
-            </form>
+    <div class="avatar-wrapper">
+        <div class="profile-avatar">
+            <i class="bi bi-person-fill"></i>
         </div>
+        <div class="edit-icon">
+            <i class="bi bi-pencil-fill"></i>
+        </div>
+    </div>
 
         <div class="trainer-name">
             <?= esc($trainer['full_name']) ?>

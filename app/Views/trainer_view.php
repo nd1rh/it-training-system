@@ -64,6 +64,7 @@
                             <h4><?= esc($trainer['full_name']) ?></h4>
                             <p><strong>Email:</strong> <?= esc($trainer['email']) ?></p>
                             <p><strong>Specialization:</strong> <?= esc($trainer['specialization'] ?? 'N/A') ?></p>
+                            <p><strong>Experience Years:</strong> <?= esc($trainer['experience_years'] ?? 'N/A') ?></p>
                         </div>
                     </div>
                 <?php endforeach; ?>

@@ -33,6 +33,9 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="directoryDropdown">
                                     <li><a class="dropdown-item" href="/directory/course">Courses</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
                                     <li><a class="dropdown-item" href="/directory/trainer">Trainers</a></li>
                                 </ul>
                             </li>
@@ -42,7 +45,27 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                     <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
                                     <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Profile
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <?php if (session()->get('role') === 'trainer'): ?>
+                                        <li><a class="dropdown-item" href="<?= base_url('profile') ?>">My Profile</a></li>
+                                    <?php else: ?>
+                                        <li><a class="dropdown-item" href="<?= base_url('trainee/profile') ?>">My Profile</a></li>
+                                    <?php endif; ?>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a></li>
                                 </ul>
                             </li>
 
@@ -54,6 +77,9 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="configureDropdown">
                                     <li><a class="dropdown-item" href="<?= site_url('configure/trainee') ?>">Trainee</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
                                     <li><a class="dropdown-item" href="<?= site_url('configure/course_fee') ?>">Course Fee</a></li>
                                 </ul>
                             </li>
@@ -64,23 +90,26 @@
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                     <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
                                     <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Profile
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="<?= base_url('trainerprofile') ?>">My Profile</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a></li>
                                 </ul>
                             </li>
 
                         <?php endif; ?>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Profile
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="<?= base_url('profile') ?>">My Profile</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="<?= base_url('logout') ?>">Logout</a></li>
-                            </ul>
-                        </li>
 
                     <?php else: ?>
                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
@@ -91,6 +120,9 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                                 <li><a class="dropdown-item" href="/about/company">Company</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
                                 <li><a class="dropdown-item" href="/about/web_policy">Web Policy</a></li>
                             </ul>
                         </li>
