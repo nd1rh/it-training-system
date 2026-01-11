@@ -5,13 +5,31 @@
     <meta charset="UTF-8">
     <title>StartIT</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Ensures the fixed navbar doesn't overlap the page content */
+        body {
+            padding-top: 70px;
+        }
+
+        /* Styling for the logo image */
+        .navbar-brand img {
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-brand:hover img {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="/">StartIT</a>
+            <a class="navbar-brand d-flex align-items-center" href="<?= base_url('/') ?>">
+                <img src="<?= base_url('assets/images/logo.jpg') ?>" alt="StartIT" class="me-2" style="height: 35px; width: auto;">
+                <span>StartIT</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>

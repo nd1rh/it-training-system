@@ -6,6 +6,10 @@
     <title>Trainee Details</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        h1 {
+            padding-top: 70px;
+        }
+        
         .badge-paid {
             background-color: #198754;
         }

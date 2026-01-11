@@ -1,4 +1,8 @@
 <style>
+    h1 {
+        padding-top: 70px;
+    }
+
     .profile-body {
         background-color: #ffffff;
         min-height: 80vh;
@@ -17,6 +21,7 @@
     .avatar-container {
         position: relative;
         margin-bottom: 15px;
+        display: inline-block;
     }
 
     .avatar-circle {
@@ -28,11 +33,7 @@
         align-items: center;
         justify-content: center;
         overflow: hidden;
-    }
-
-    .avatar-circle i {
-        font-size: 80px;
-        color: #666;
+        border: 2px solid #ddd;
     }
 
     .avatar-circle img {
@@ -55,6 +56,12 @@
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .edit-btn:hover {
+        background-color: #0b5ed7;
+        transform: scale(1.1);
     }
 
     .trainee-name-display {
@@ -91,11 +98,22 @@
 <div class="profile-body">
     <h1 class="profile-title">MyProfile</h1>
 
-    <div class="avatar-circle">
-        <img
-            src="<?= base_url($trainee['profile_pic'] ?: 'uploads/trainees/default.png') ?>"
-            alt="Profile">
-    </div>
+    <form action="<?= base_url('trainee/update_photo') ?>" method="POST" enctype="multipart/form-data" id="profilePicForm">
+        <div class="avatar-container">
+            <div class="avatar-circle">
+                <img
+                    id="profilePreview"
+                    src="<?= base_url($trainee['profile_pic'] ?: 'uploads/trainees/default.png') ?>"
+                    alt="Profile">
+            </div>
+            
+            <label for="imageUpload" class="edit-btn">
+                <span style="font-size: 18px;">✎</span>
+            </label>
+            
+            <input type="file" name="profile_pic" id="imageUpload" accept="image/*" style="display: none;">
+        </div>
+    </form>
 
     <div class="trainee-name-display"><?= esc($trainee['full_name']) ?></div>
 
@@ -108,3 +126,19 @@
         <div class="info-row"><span class="info-label">Role:</span> Trainee</div>
     </div>
 </div>
+
+<script>
+    // JavaScript for Live Preview
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        
+        if (file) {
+            // 1. Show preview immediately
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('profilePreview').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>

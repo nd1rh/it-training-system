@@ -1,132 +1,145 @@
-<!DOCTYPE html>
-<html lang="en">
+<style>
+    h1 {
+        padding-top: 70px;
+    }
 
-<head>
-    <meta charset="UTF-8">
-    <title>MyProfile - Trainer</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        body {
-            background-color: #f4f7f6;
-        }
+    .profile-body {
+        background-color: #ffffff;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
 
-        .profile-container {
-            max-width: 600px;
-            margin: 50px auto;
-            text-align: center;
-        }
+    .profile-title {
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
 
-        .profile-header h1 {
-            font-size: 2.5rem;
-            color: #333;
-            margin-bottom: 20px;
-        }
+    .avatar-container {
+        position: relative;
+        margin-bottom: 15px;
+        display: inline-block;
+    }
 
-        .avatar-wrapper {
-            position: relative;
-            display: inline-block;
-            margin-bottom: 15px;
-        }
+    .avatar-circle {
+        width: 120px;
+        height: 120px;
+        background-color: #ccc;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        border: 2px solid #ddd;
+    }
 
-        .profile-avatar {
-            width: 120px;
-            height: 120px;
-            background-color: #d9d9d9;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 4rem;
-            color: #555;
-        }
+    .avatar-circle img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
 
-        .edit-icon {
-            position: absolute;
-            bottom: 5px;
-            right: 5px;
-            background-color: #0d6efd;
-            color: white;
-            border-radius: 50%;
-            padding: 5px;
-            font-size: 0.8rem;
-            border: 2px solid white;
-        }
+    .edit-btn {
+        position: absolute;
+        bottom: 5px;
+        right: 5px;
+        background: #0d6efd;
+        color: white;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        border: 2px solid white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: transform 0.2s, background-color 0.2s;
+    }
 
-        .trainer-name {
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-bottom: 30px;
-        }
+    .edit-btn:hover {
+        background-color: #0b5ed7;
+        transform: scale(1.1);
+    }
 
-        .details-box {
-            background-color: #e9ecef;
-            border: 1px solid #ced4da;
-            padding: 30px;
-            text-align: left;
-            border-radius: 4px;
-        }
+    .trainee-name-display {
+        font-size: 1.4rem;
+        font-weight: 500;
+        margin-bottom: 25px;
+    }
 
-        .details-box h4 {
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
+    .details-card {
+        background-color: #e9ecef;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        width: 100%;
+        max-width: 500px;
+        padding: 25px;
+        text-align: left;
+    }
 
-        .detail-item {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
+    .details-card h4 {
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
 
-        .detail-value {
-            font-weight: normal;
-            margin-left: 5px;
-        }
-    </style>
-</head>
+    .info-row {
+        margin-bottom: 10px;
+        font-size: 1.05rem;
+    }
 
-<body>
+    .info-label {
+        font-weight: bold;
+    }
+</style>
 
-    <div class="profile-container">
-        <div class="profile-header">
-            <h1>MyProfile</h1>
+<div class="profile-body">
+    <h1 class="profile-title">MyProfile</h1>
+
+    <form action="<?= base_url('trainer/update_photo') ?>" method="POST" enctype="multipart/form-data" id="profilePicForm">
+        <div class="avatar-container">
+            <div class="avatar-circle">
+                <img
+                    id="profilePreview"
+                    src="<?= base_url($trainer['profile_pic'] ?: 'uploads/trainers/default.png') ?>"
+                    alt="Profile">
+            </div>
+
+            <label for="imageUpload" class="edit-btn">
+                <span style="font-size: 18px;">✎</span>
+            </label>
+
+            <input type="file" name="profile_pic" id="imageUpload" accept="image/*" style="display: none;">
         </div>
+    </form>
 
-        <div class="avatar-circle">
-            <img
-                src="<?= base_url($trainer['profile_pic'] ?: 'uploads/trainers/default.png') ?>"
-                alt="Profile">
-        </div>
+    <div class="trainer-name-display"><?= esc($trainer['full_name']) ?></div>
 
-        <div class="trainer-name">
-            <?= esc($trainer['full_name']) ?>
-        </div>
-
-        <div class="details-box">
+        <div class="details-card">
             <h4>Details:</h4>
-
-            <div class="detail-item">
-                Full Name: <span class="detail-value"><?= esc($trainer['full_name']) ?></span>
-            </div>
-
-            <div class="detail-item">
-                Email Address: <span class="detail-value"><?= esc($trainer['email']) ?></span>
-            </div>
-
-            <div class="detail-item">
-                Specialization: <span class="detail-value"><?= esc($trainer['specialization'] ?? 'N/A') ?></span>
-            </div>
-
-            <div class="detail-item">
-                Experience: <span class="detail-value"><?= esc($trainer['experience_years'] ?? '0') ?> Years</span>
-            </div>
-
-            <div class="detail-item">
-                Role: <span class="detail-value text-capitalize"><?= esc(session()->get('role')) ?></span>
-            </div>
+            <div class="info-row"><span class="info-label">Full Name:</span> <?= esc($trainer['full_name']) ?></div>
+            <div class="info-row"><span class="info-label">Email Address:</span> <?= esc($trainer['email']) ?></div>
+            <div class="info-row"><span class="info-label">Gender:</span> <?= esc($trainer['gender']) ?></div>
+            <div class="info-row"><span class="info-label">Specialization:</span> <?= esc($trainer['specialization']) ?></div>
+            <div class="info-row"><span class="info-label">Experience Years:</span> <?= esc($trainer['experience_years']) ?></div>
+            <div class="info-row"><span class="info-label">Role:</span> Trainer</div>
         </div>
     </div>
 
-</body>
-
-</html>
+<script>
+    // JavaScript for Live Preview
+    document.getElementById('imageUpload').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        
+        if (file) {
+            // 1. Show preview immediately
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                document.getElementById('profilePreview').src = e.target.result;
+            }
+            reader.readAsDataURL(file);
+        }
+    });
+</script>
