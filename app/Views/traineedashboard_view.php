@@ -18,7 +18,7 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <div class="dashboard-container container" style="position: relative; z-index: 1; padding-top: 100px;"> <div class="dashboard-welcome text-center mt-5">
+    <div class="dashboard-container container" style="position: relative; z-index: 1;"> <div class="dashboard-welcome text-center mt-5">
             <h1 class="display-5 fw-bold text-primary">Welcome, <?= esc(session()->get('full_name')) ?>!</h1>
             <p class="lead text-muted">Track your learning progress and upcoming tasks here.</p>
         </div>

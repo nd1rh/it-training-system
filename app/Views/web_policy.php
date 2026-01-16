@@ -23,7 +23,7 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <div class="policy-container" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="policy-container" style="position: relative; z-index: 1;">
 
         <div class="policy-card">
 

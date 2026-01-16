@@ -8,6 +8,21 @@
 
 <div class="enrolled-page-wrapper">
     <div class="container enrolled-page">
+
+        <?php if (session()->getFlashdata('error')): ?>
+            <div class="alert alert-danger text-center">
+                <i class="fas fa-exclamation-circle me-2"></i>
+                <?= session()->getFlashdata('error') ?>
+            </div>
+        <?php endif; ?>
+
+        <?php if (session()->getFlashdata('success')): ?>
+            <div class="alert alert-success text-center">
+                <i class="fas fa-check-circle me-2"></i>
+                <?= session()->getFlashdata('success') ?>
+            </div>
+        <?php endif; ?>
+
         <!-- Page Header -->
         <section class="enrolled-header text-center fade-in-up" style="animation-delay: 0.1s;">
             <h1 class="enrolled-page-title"><i class="fas fa-graduation-cap me-2"></i>Courses Enrolled</h1>
@@ -76,7 +91,7 @@
     $(document).ready(function() {
         // Add animated background class to body
         $('body').addClass('animated-background');
-        
+
         // Trigger animations on page load
         $('.fade-in-up').each(function(index) {
             $(this).css('opacity', '1');

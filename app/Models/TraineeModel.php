@@ -31,7 +31,7 @@ class TraineeModel extends Model
             t.trainee_id,
             t.full_name,
             t.email,
-            t.gender,
+            t.phone_num,
             c.course_name,
             c.course_id,
             c.price,

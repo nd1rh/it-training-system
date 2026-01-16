@@ -45,6 +45,8 @@ $routes->get('configure/course/search', 'ManageCourseController::search', ['filt
 $routes->get('configure/course/edit/(:num)', 'ManageCourseController::edit/$1', ['filter' => 'auth']);
 $routes->post('configure/course/update/(:num)', 'ManageCourseController::update/$1', ['filter' => 'auth']);
 $routes->get('configure/course/delete/(:num)', 'ManageCourseController::delete/$1', ['filter' => 'auth']);
+$routes->get('configure/course/add', 'ManageCourseController::add', ['filter' => 'auth']);
+$routes->post('configure/course/save', 'ManageCourseController::save', ['filter' => 'auth']);
 
 // Trainer Profile Route
 $routes->get('trainer/profile', 'TrainerProfileController::index', ['filter' => 'auth']);

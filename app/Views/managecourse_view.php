@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -29,7 +29,7 @@
     <!-- =========================
          COURSE DETAILS PAGE
     ========================== -->
-    <div class="container course-page" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container course-page" style="position: relative; z-index: 1;">
 
         <!-- Page Title -->
         <section class="course-header">
@@ -44,10 +44,17 @@
                     type="text"
                     id="search"
                     class="form-control search-input"
-                    placeholder="Search by course name or description"
+                    placeholder="Search by Course Name or Description"
                     style="padding-left: 45px;">
             </div>
         </section>
+
+        <!-- Add New Course Button -->
+        <div class="d-flex gap-2 justify-content-center" style="white-space: nowrap; margin-bottom: 20px;">
+            <a href="<?= base_url('configure/course/add') ?>" class="btn btn-success fw-bold">
+                <i class="fas fa-plus me-1"></i> Add New Course
+            </a>
+        </div>
 
         <!-- Table -->
         <section class="course-table">

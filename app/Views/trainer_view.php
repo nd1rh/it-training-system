@@ -22,7 +22,7 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <div class="container mt-5" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container mt-5" style="position: relative; z-index: 1;">
         <h1 class="text-center page-title">Our Trainers</h1>
 
         <div class="row g-4">
@@ -36,18 +36,32 @@
                     <div class="col-md-3 col-sm-6">
                         <div class="trainer-card">
 
-                            <!-- Trainer Image -->
                             <img
-                                src="<?= base_url($trainerImg) ?>"
-                                alt="<?= esc($trainer['full_name']) ?>"
-                                class="trainer-avatar">
+                                src="<?= base_url($trainer['profile_pic'] ?? 'uploads/trainers/default.png') ?>"
+                                class="trainer-avatar"
+                                alt="<?= esc($trainer['full_name']) ?>">
 
                             <h4><?= esc($trainer['full_name']) ?></h4>
                             <p><strong>Email:</strong> <?= esc($trainer['email']) ?></p>
                             <p><strong>Specialization:</strong> <?= esc($trainer['specialization'] ?? 'N/A') ?></p>
                             <p><strong>Experience:</strong> <?= esc($trainer['experience_years'] ?? 'N/A') ?> years</p>
 
+                            <!-- Courses -->
+                            <div class="trainer-courses mt-2">
+                                <strong>Courses:</strong>
+                                <?php if (!empty($trainer['courses'])): ?>
+                                    <ul>
+                                        <?php foreach ($trainer['courses'] as $course): ?>
+                                            <li><?= esc($course) ?></li>
+                                        <?php endforeach; ?>
+                                    </ul>
+                                <?php else: ?>
+                                    <p class="text-muted">No courses assigned</p>
+                                <?php endif; ?>
+                            </div>
+
                         </div>
+
                     </div>
 
                 <?php endforeach; ?>

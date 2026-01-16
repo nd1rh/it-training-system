@@ -10,7 +10,7 @@ class HomeController extends BaseController
     {
         $courseModel = new CourseModel();
 
-        $data['available_courses'] = $courseModel->limit(8)->findAll();
+        $data['available_courses'] = $courseModel->findAll();
 
         echo view('templates/header');
         echo view('home_view', $data);

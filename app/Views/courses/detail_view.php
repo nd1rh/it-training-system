@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($course['course_name'] ?? 'Course Detail') ?> | StartIT</title>
+
     <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body class="animated-background">
@@ -21,66 +22,136 @@
     </div>
 
     <div class="container course-detail-page">
+
         <?php if ($course): ?>
             <div class="course-detail-card fade-in-up">
                 <div class="course-detail-wrapper">
-                    <!-- Course Image (Left Side) -->
+
+                    <!-- Course Image -->
                     <?php if (!empty($course['course_image'])): ?>
                         <div class="course-image-container fade-in-up" style="animation-delay: 0.2s;">
-                            <img src="<?= base_url($course['course_image']) ?>" alt="<?= esc($course['course_name']) ?>" class="course-detail-image">
+                            <img src="<?= base_url($course['course_image']) ?>"
+                                alt="<?= esc($course['course_name']) ?>"
+                                class="course-detail-image">
                         </div>
                     <?php endif; ?>
 
-                    <!-- Course Content (Right Side) -->
+                    <!-- Course Content -->
                     <div class="course-detail-content">
+
                         <h1 class="course-detail-title fade-in-up" style="animation-delay: 0.3s;">
                             <?= esc($course['course_name']) ?>
                         </h1>
-                        
+
                         <p class="course-detail-description fade-in-up" style="animation-delay: 0.4s;">
                             <?= esc($course['course_desc']) ?>
                         </p>
 
                         <div class="course-detail-info fade-in-up" style="animation-delay: 0.5s;">
                             <div class="info-item">
-                                <span class="info-label"><i class="fas fa-clock me-2"></i>Duration:</span>
-                                <span class="info-value"><?= esc($course['course_duration']) ?> hours</span>
+                                <span class="info-label">
+                                    <i class="fas fa-clock me-2"></i>Duration:
+                                </span>
+                                <span class="info-value">
+                                    <?= esc($course['course_duration']) ?> hours
+                                </span>
                             </div>
-                            
+
                             <div class="info-item">
-                                <span class="info-label"><i class="fas fa-tag me-2"></i>Price:</span>
+                                <span class="info-label">
+                                    <i class="fas fa-tag me-2"></i>Price:
+                                </span>
                                 <span class="info-value">
                                     <?php if (floatval($course['price']) <= 0): ?>
-                                        <span class="badge badge-free"><i class="fas fa-gift me-1"></i>Free</span>
+                                        <span class="badge badge-free">
+                                            <i class="fas fa-gift me-1"></i>Free
+                                        </span>
                                     <?php else: ?>
-                                        <i class="fas fa-money-bill-wave me-1"></i>RM <?= number_format($course['price'], 2) ?>
+                                        <i class="fas fa-money-bill-wave me-1"></i>
+                                        RM <?= number_format($course['price'], 2) ?>
                                     <?php endif; ?>
                                 </span>
                             </div>
                         </div>
 
+                        <!-- ENROLL BUTTON -->
                         <div class="course-detail-actions fade-in-up" style="animation-delay: 0.6s;">
-                            <a href="<?= site_url('enroll/' . $course['course_id']) ?>" class="btn-enroll">
-                                <i class="fas fa-user-plus me-2"></i>Enroll Now
-                            </a>
+
+                            <?php if ($isEnrolled): ?>
+
+                                <div class="alert alert-success mb-3">
+                                    <i class="fas fa-check-circle me-2"></i>
+                                    You are already enrolled in this course.
+                                </div>
+
+                                <a href="<?= site_url('my-courses') ?>" class="btn btn-success">
+                                    <i class="fas fa-play me-2"></i>Go to My Courses
+                                </a>
+
+                            <?php else: ?>
+
+                                <?php if (floatval($course['price']) > 0): ?>
+
+                                    <!-- PAID COURSE -->
+                                    <a href="<?= site_url('payment/' . $course['course_id']) ?>"
+                                        class="btn-enroll">
+                                        <i class="fas fa-credit-card me-2"></i>Pay & Enroll
+                                    </a>
+
+                                <?php else: ?>
+
+                                    <!-- FREE COURSE -->
+                                    <a href="<?= site_url('enroll/' . $course['course_id']) ?>"
+                                        class="btn-enroll"
+                                        id="enrollBtn"
+                                        data-price="<?= $course['price'] ?>">
+                                        <i class="fas fa-user-plus me-2"></i>Enroll Now
+                                    </a>
+
+                                <?php endif; ?>
+
+                            <?php endif; ?>
+
                         </div>
+
+
                     </div>
                 </div>
             </div>
+
         <?php else: ?>
             <div class="course-detail-card fade-in-up">
                 <p class="text-center">Course not found.</p>
             </div>
         <?php endif; ?>
+
     </div>
 
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <!-- FREE COURSE CONFIRMATION SCRIPT -->
     <script>
         $(document).ready(function() {
-            // Trigger animations on page load
-            $('.fade-in-up').each(function(index) {
-                $(this).css('opacity', '1');
+
+            $('.fade-in-up').css('opacity', '1');
+
+            $('#enrollBtn').on('click', function(e) {
+
+                const price = parseFloat($(this).data('price'));
+
+                if (price <= 0) {
+                    const confirmEnroll = confirm(
+                        "This is a FREE course.\n\n" +
+                        "Do you want to enroll now?"
+                    );
+
+                    if (!confirmEnroll) {
+                        e.preventDefault(); // stop redirect
+                    }
+                }
             });
+
         });
     </script>
 

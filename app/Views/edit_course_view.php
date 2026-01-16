@@ -23,7 +23,7 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <div class="container course-page" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container course-page" style="position: relative; z-index: 1;">
         <div class="edit-container">
             <div class="edit-card">
                 <h1>Edit Course: <?= esc($course['course_name']) ?></h1>
@@ -51,14 +51,14 @@
                         <div class="photo-upload-section">
                             <img id="imagePreview" 
                                  class="edit-avatar-preview" 
-                                 src="<?= base_url($course['course_image'] ?: 'assets/images/default-avatar.png') ?>" 
+                                 src="<?= base_url($course['course_image'] ?: 'uploads/courses/default.png') ?>" 
                                  alt="Course Image Preview">
                             
                             <div class="upload-actions">
                                 <label for="course_image" class="btn-change-photo">Change Image</label>
                                 <input type="file" name="course_image" id="course_image" accept="image/*" style="display: none;">
                                 <br>
-                                <small class="text-muted">Recommended: JPG/PNG (Max 2MB)</small>
+                                <small class="text-muted">Max 2MB</small>
                             </div>
                         </div>
 

@@ -19,7 +19,7 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <div class="container mt-5" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container mt-5" style="position: relative; z-index: 1;">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
@@ -71,12 +71,6 @@
                         <div class="mb-3">
                             <label class="form-label">Date of Birth</label>
                             <input type="date" name="date_of_birth" class="form-control" value="<?= esc($trainee['date_of_birth'] ?? '') ?>">
-                        </div>
-
-                        <div class="mb-3">
-                            <label class="form-label">New Password (Leave blank to keep current)</label>
-                            <input type="password" name="password" class="form-control" placeholder="Enter new password (min 8 characters)">
-                            <small class="text-muted">Only fill this if you want to change the password</small>
                         </div>
 
                         <div class="d-grid gap-2">

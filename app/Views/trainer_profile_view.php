@@ -13,12 +13,17 @@
                 <div class="card-body">
                     <h2 class="text-primary fw-bold mb-4">My Profile</h2>
 
-                    <div class="position-relative d-inline-block mb-4">
-                        <img src="<?= base_url($trainer['profile_pic'] ?: 'assets/images/default-avatar.png') ?>" 
-                             alt="User Avatar" class="rounded-circle border profile-avatar-large">
-                        <a href="<?= base_url('trainer/edit_profile') ?>" class="btn btn-primary btn-sm rounded-circle position-absolute bottom-0 start-100 translate-middle shadow-sm">
-                            <i class="bi bi-pencil-fill"></i>
-                        </a>
+                    <div class="profile-avatar-container">
+                        <img
+                            id="profilePreview"
+                            src="<?= base_url($trainer['profile_pic'] ?: 'uploads/trainers/default.png') ?>"
+                            class="profile-avatar"
+                            alt="User Avatar">
+
+                        <label for="imageUpload" class="edit-icon-badge" style="cursor: pointer;">
+                            ✎
+                        </label>
+                        <input type="file" name="profile_pic" id="imageUpload" accept="image/*" style="display: none;">
                     </div>
 
                     <h1 class="fw-bold text-primary mb-1"><?= $trainer['full_name'] ?></h1>

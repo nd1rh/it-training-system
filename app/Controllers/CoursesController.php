@@ -26,9 +26,9 @@ class CoursesController extends BaseController
         // Courses stats
         $builder = $this->db->table('course_enrollments');
         $builder->select("
-            SUM(status IN ('Enrolled','Paid')) AS courses_enrolled,
-            SUM(status IN ('Enrolled','Paid','In Progress')) AS courses_in_progress,
-            SUM(status = 'Completed') AS courses_completed
+        COUNT(*) AS courses_enrolled,
+        SUM(status IN ('Enrolled','Paid','In Progress')) AS courses_in_progress,
+        SUM(status = 'Completed') AS courses_completed
         ");
         $builder->where('trainee_id', $user_id);
         $stats = $builder->get()->getRowArray();
@@ -111,8 +111,17 @@ class CoursesController extends BaseController
     public function detail($course_id)
     {
         $data['course'] = $this->courseModel->find($course_id);
+
         if (!$data['course']) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Course not found');
+        }
+
+        $traineeId = session()->get('trainee_id');
+        $data['isEnrolled'] = false;
+
+        if ($traineeId) {
+            $enrollModel = new CourseEnrollmentModel();
+            $data['isEnrolled'] = $enrollModel->isAlreadyEnrolled($traineeId, $course_id);
         }
 
         echo view('templates/header');
@@ -143,7 +152,7 @@ class CoursesController extends BaseController
     public function search()
     {
         $keyword = $this->request->getGet('keyword');
-        
+
         if (empty($keyword)) {
             // If no keyword, return all courses
             $courses = $this->courseModel->limit(8)->findAll();
@@ -157,11 +166,11 @@ class CoursesController extends BaseController
 
         // Build HTML response matching the home page structure
         $html = '';
-        
+
         if (!empty($courses)) {
             foreach ($courses as $course) {
                 $courseImg = $course['course_image'] ?? 'uploads/courses/default.png';
-                
+
                 $html .= '
                 <div class="col-lg-3 col-md-4 col-sm-6 course-item" style="opacity: 0;">
                     <div class="course-card" onclick="location.href=\'' . site_url('courses/detail/' . $course['course_id']) . '\'">
@@ -176,7 +185,7 @@ class CoursesController extends BaseController
         } else {
             $html = '<p class="text-center no-course">No courses found matching your search.</p>';
         }
-        
+
         return $this->response->setBody($html);
     }
 

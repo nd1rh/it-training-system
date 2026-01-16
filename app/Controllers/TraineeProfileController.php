@@ -55,6 +55,7 @@ class TraineeProfileController extends BaseController
             'email'         => $this->request->getPost('email'),
             'phone_num'     => $this->request->getPost('phone_number'), // View: phone_number -> DB: phone_num
             'date_of_birth' => $this->request->getPost('dob'),          // View: dob -> DB: date_of_birth
+            'gender'        => $this->request->getPost('gender')
         ];
 
         // 2. Handle Password Update (if provided)

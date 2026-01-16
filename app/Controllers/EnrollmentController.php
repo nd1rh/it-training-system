@@ -26,15 +26,9 @@ class EnrollmentController extends BaseController
                 ->with('error', 'Course not found.');
         }
 
-        // Prevent duplicate enrollment
-        $existing = $enrollModel
-            ->where('trainee_id', $traineeId)
-            ->where('course_id', $courseId)
-            ->first();
-
-        if ($existing) {
-            return redirect()->to(site_url('enrolled'))
-                ->with('info', 'You are already enrolled in this course.');
+        if ($enrollModel->isAlreadyEnrolled($traineeId, $courseId)) {
+            return redirect()->to('/courses/enrolled')
+                ->with('error', 'You are already enrolled in this course.');
         }
 
         // Free course

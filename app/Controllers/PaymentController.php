@@ -50,15 +50,9 @@ class PaymentController extends BaseController
         $enrollModel  = new CourseEnrollmentModel();
         $paymentModel = new PaymentModel();
 
-        // Prevent duplicate enrollment
-        $existing = $enrollModel
-            ->where('trainee_id', $traineeId)
-            ->where('course_id', $courseId)
-            ->first();
-
-        if ($existing) {
-            return redirect()->to(site_url('enrolled'))
-                ->with('info', 'You have already paid for this course.');
+        if ($enrollModel->isAlreadyEnrolled($traineeId, $courseId)) {
+            return redirect()->to('/courses/enrolled')
+                ->with('error', 'You have already paid for this course.');
         }
 
         // Create enrollment

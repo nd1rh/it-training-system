@@ -14,14 +14,14 @@
             <div class="edit-content-wrapper">
 
                 <div class="photo-upload-section">
-                    <img src="<?= base_url($trainer['profile_pic'] ?: 'assets/images/default-avatar.png') ?>"
+                    <img src="<?= base_url($trainer['profile_pic'] ?: 'uploads/trainers/default.png') ?>"
                         alt="Profile Preview" class="edit-avatar-preview" id="avatarPreview">
 
                     <div class="upload-controls">
                         <input type="file" name="profile_pic" id="profile_pic" class="d-none" onchange="previewImage(this)">
                         <label for="profile_pic" class="btn-change-photo">Change Photo</label>
                         <input type="hidden" name="old_pic" value="<?= $trainer['profile_pic'] ?>">
-                        <p class="text-muted mt-2" style="font-size: 0.85rem;">Max size: 2MB (JPG, PNG)</p>
+                        <p class="text-muted mt-2" style="font-size: 0.85rem;">Max size: 2MB</p>
                     </div>
                 </div>
 
@@ -34,11 +34,6 @@
                     <div class="form-group">
                         <label>Email Address</label>
                         <input type="email" name="email" class="form-control" value="<?= esc($trainer['email']) ?>" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Phone Number</label>
-                        <input type="text" name="phone_number" class="form-control" value="<?= esc($trainer['phone_number'] ?? '') ?>">
                     </div>
 
                     <div class="form-group">
@@ -57,6 +52,12 @@
                     <div class="form-group">
                         <label>Experience (Years)</label>
                         <input type="number" name="experience_years" class="form-control" value="<?= esc($trainer['experience_years'] ?? '0') ?>">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">New Password (Leave blank to keep current)</label>
+                        <input type="password" name="password" class="form-control" placeholder="Enter new password (min 8 characters)">
+                        <small class="text-muted">Only fill this if you want to change the password</small>
                     </div>
 
                     <div class="form-group">

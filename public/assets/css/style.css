@@ -129,9 +129,11 @@ body {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -182,18 +184,23 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translate(0, 0) scale(1);
         opacity: 0.3;
     }
+
     25% {
         transform: translate(50px, -50px) scale(1.1);
         opacity: 0.4;
     }
+
     50% {
         transform: translate(-30px, 30px) scale(0.9);
         opacity: 0.35;
     }
+
     75% {
         transform: translate(-50px, -30px) scale(1.05);
         opacity: 0.4;
@@ -208,9 +215,10 @@ body {
 /* =========================
    HOMEPAGE HERO & SEARCH
 ========================= */
-header, .hero-section {
-    padding-top: 60px; 
-    padding-bottom: 40px; 
+header,
+.hero-section {
+    padding-top: 60px;
+    padding-bottom: 40px;
     text-align: center;
     color: #007bff;
 }
@@ -219,13 +227,15 @@ header h1 {
     margin-top: 20px;
     margin-bottom: 10px;
     font-size: 2.5rem;
-    color: #007bff; /* Matching the blue */
+    color: #007bff;
+    /* Matching the blue */
 }
 
 /* Pill-Shaped Search (as seen in Course Details) */
 .search-container {
     max-width: 850px;
-    margin: -40px auto 50px auto; /* Overlaps hero slightly */
+    margin: -40px auto 50px auto;
+    /* Overlaps hero slightly */
     position: relative;
     z-index: 10;
     margin-top: 20px;
@@ -265,8 +275,10 @@ header h1 {
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column; /* Stacks image and text vertically */
-    height: 100%;           /* Important: makes all cards in a row equal height */
+    flex-direction: column;
+    /* Stacks image and text vertically */
+    height: 100%;
+    /* Important: makes all cards in a row equal height */
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -279,8 +291,10 @@ header h1 {
 /* 3. The Image: Forces a consistent height/ratio */
 .course-image {
     width: 100%;
-    aspect-ratio: 16 / 9;   /* Ensures every image box is identical */
-    object-fit: cover;      /* Prevents stretching/distortion */
+    aspect-ratio: 16 / 9;
+    /* Ensures every image box is identical */
+    object-fit: cover;
+    /* Prevents stretching/distortion */
 }
 
 /* 4. The Content Area: Pushes content to fill the card */
@@ -288,7 +302,8 @@ header h1 {
     padding: 16px;
     display: flex;
     flex-direction: column;
-    flex-grow: 1;           /* This pushes the bottom of the card down */
+    flex-grow: 1;
+    /* This pushes the bottom of the card down */
     text-align: center;
 }
 
@@ -299,10 +314,9 @@ header h1 {
     margin-bottom: 10px;
     /* Forces title to occupy exactly 2 lines for alignment */
     display: -webkit-box;
-    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    min-height: 2.8em; 
+    min-height: 2.8em;
 }
 
 .course-description {
@@ -310,7 +324,6 @@ header h1 {
     color: #666;
     /* Limits description to 3 lines to keep cards tidy */
     display: -webkit-box;
-    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
@@ -323,6 +336,7 @@ header h1 {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -335,15 +349,41 @@ header h1 {
 }
 
 /* Staggered animation delays for cascading effect */
-.course-item:nth-child(1) { animation-delay: 0.1s; }
-.course-item:nth-child(2) { animation-delay: 0.2s; }
-.course-item:nth-child(3) { animation-delay: 0.3s; }
-.course-item:nth-child(4) { animation-delay: 0.4s; }
-.course-item:nth-child(5) { animation-delay: 0.5s; }
-.course-item:nth-child(6) { animation-delay: 0.6s; }
-.course-item:nth-child(7) { animation-delay: 0.7s; }
-.course-item:nth-child(8) { animation-delay: 0.8s; }
-.course-item:nth-child(n+9) { animation-delay: 0.9s; }
+.course-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.course-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.course-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.course-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.course-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.course-item:nth-child(6) {
+    animation-delay: 0.6s;
+}
+
+.course-item:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+.course-item:nth-child(8) {
+    animation-delay: 0.8s;
+}
+
+.course-item:nth-child(n+9) {
+    animation-delay: 0.9s;
+}
 
 /* =========================
    COURSE DETAIL PAGE
@@ -482,6 +522,7 @@ header h1 {
         opacity: 0;
         transform: translateY(40px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -494,37 +535,37 @@ header h1 {
         flex-direction: column;
         gap: 30px;
     }
-    
+
     .course-image-container {
         flex: 1;
         position: relative;
         top: 0;
     }
-    
+
     .course-detail-image {
         min-height: 300px;
     }
-    
+
     .course-detail-content {
         text-align: center;
     }
-    
+
     .course-detail-title {
         font-size: 2rem;
         text-align: center;
     }
-    
+
     .course-detail-description {
         font-size: 1rem;
         text-align: left;
     }
-    
+
     .course-detail-info {
         justify-content: center;
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .course-detail-card {
         padding: 30px 20px;
     }
@@ -735,20 +776,20 @@ header h1 {
     .payment-page-wrapper {
         padding: 20px 15px;
     }
-    
+
     .payment-header .page-title {
         font-size: 2rem;
     }
-    
+
     .payment-summary-card,
     .payment-form-card {
         padding: 25px 20px;
     }
-    
+
     .payment-info-grid {
         grid-template-columns: 1fr;
     }
-    
+
     .payment-course-title {
         font-size: 1.5rem;
     }
@@ -1007,20 +1048,20 @@ header h1 {
     .enrolled-page-wrapper {
         padding: 40px 15px 20px 15px;
     }
-    
+
     .enrolled-page-title {
         font-size: 2rem;
     }
-    
+
     .enrolled-page-subtitle {
         font-size: 1rem;
     }
-    
+
     .enrolled-courses-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .enrolled-course-card {
         margin-bottom: 0;
     }
@@ -1128,7 +1169,7 @@ header h1 {
     text-align: center;
     box-shadow: var(--card-shadow);
     transition: var(--transition);
-    border: 1px solid rgba(0,0,0,0.03);
+    border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
 .trainer-card:hover {
@@ -1233,16 +1274,15 @@ header h1 {
 
 .about-lead {
     font-size: 1.25rem;
-    color: #6c757d;
 }
 
 .about-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; 
+    align-items: stretch;
     gap: 20px;
     padding: 40px 20px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .about-card {
@@ -1250,11 +1290,11 @@ header h1 {
     border: 1px solid #eee;
     border-radius: 12px;
     padding: 30px;
-    width: 350px; 
+    width: 350px;
     display: flex;
     flex-direction: column;
     text-align: center;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .about-card h3 {
@@ -1271,7 +1311,15 @@ header h1 {
     min-height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
+}
+
+.about-title {
+    text-align: center;
+    color: var(--primary-blue);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 40px;
 }
 
 .card-feature {
@@ -1318,7 +1366,7 @@ header h1 {
     padding: 50px;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
     margin-top: 70px;
 }
 
@@ -1327,10 +1375,8 @@ header h1 {
     text-align: center;
     color: var(--primary-blue);
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 40px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
 }
 
 /* Section Headings (1. Privacy Policy, etc.) */
@@ -1368,12 +1414,15 @@ header h1 {
 /* =========================
    UTILITIES
    ========================= */
-.text-center { text-align: center; }
+.text-center {
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .policy-card {
         padding: 30px 20px;
     }
+
     .policy-title {
         font-size: 2rem;
     }
@@ -1393,14 +1442,14 @@ header h1 {
     padding: 40px;
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 .register-title {
     text-align: center;
     color: var(--primary-blue);
     font-size: 2.2rem;
-    font-weight: 800;
+    font-weight: 700;
     margin-bottom: 30px;
 }
 
@@ -1599,12 +1648,17 @@ header h1 {
     padding: 40px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    display: flex;            /* Added: Enables layout control */
-    flex-direction: column;   /* Added: Stacks number and label vertically */
-    align-items: center;      /* Centers content horizontally */
-    justify-content: center;  /* Centers content vertically */
+    display: flex;
+    /* Added: Enables layout control */
+    flex-direction: column;
+    /* Added: Stacks number and label vertically */
+    align-items: center;
+    /* Centers content horizontally */
+    justify-content: center;
+    /* Centers content vertically */
     transition: transform 0.3s ease;
-    border-top: 5px solid #007bff; /* Default blue border */
+    border-top: 5px solid #007bff;
+    /* Default blue border */
     min-height: 200px;
 }
 
@@ -1612,10 +1666,17 @@ header h1 {
     transform: translateY(-5px);
 }
 
-/* Individual Top Borders */
-.stat-card.enrolled { border-top-color: #007bff; }
-.stat-card.progress { border-top-color: #ffc107; } /* Yellow for progress */
-.stat-card.completed { border-top-color: #28a745; } /* Green for completed */
+.stat-card.enrolled {
+    background-color: var(--primary-blue);
+}
+
+.stat-card.progress {
+    background-color: var(--primary-yellow);
+}
+
+.stat-card.completed {
+    background-color: var(--primary-green);
+}
 
 .stat-number {
     font-size: 3rem;
@@ -1672,7 +1733,8 @@ header h1 {
     height: 100%;
     border-radius: 50%;
     border: 4px solid var(--primary-blue);
-    padding: 5px; /* Creates the white gap seen in screenshots */
+    padding: 5px;
+    /* Creates the white gap seen in screenshots */
     object-fit: cover;
 }
 
@@ -1766,7 +1828,7 @@ header h1 {
     padding: 40px;
     box-shadow: var(--card-shadow);
     text-align: center;
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
 .profile-avatar-container {
@@ -1781,7 +1843,8 @@ header h1 {
     height: 100%;
     border-radius: 50%;
     border: 4px solid var(--primary-blue);
-    padding: 4px; /* White gap between border and image */
+    padding: 4px;
+    /* White gap between border and image */
     object-fit: cover;
     background: #fff;
 }
@@ -1816,7 +1879,8 @@ header h1 {
 }
 
 .info-item {
-    display: flex; /* Aligns label and value perfectly */
+    display: flex;
+    /* Aligns label and value perfectly */
     padding: 12px 0;
     border-bottom: 1px solid #f5f5f5;
 }
@@ -1828,7 +1892,8 @@ header h1 {
 .info-label {
     font-weight: 700;
     color: var(--text-main);
-    width: 150px; /* Fixed width for labels */
+    width: 150px;
+    /* Fixed width for labels */
     flex-shrink: 0;
 }
 
@@ -1843,8 +1908,8 @@ header h1 {
 }
 
 .btn-edit-profile {
-    background-color: var(--primary-blue) !important; 
-    color: white !important;                        
+    background-color: var(--primary-blue) !important;
+    color: white !important;
     border: 1px solid var(--primary-blue);
     padding: 10px 25px;
     border-radius: 8px;
@@ -1859,8 +1924,8 @@ header h1 {
 .btn-edit-profile:hover {
     background-color: var(--primary-dark) !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);  
-    transform: translateY(-2px);                   
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+    transform: translateY(-2px);
 }
 
 /* =========================
@@ -1910,8 +1975,8 @@ header h1 {
 }
 
 .btn-change-photo {
-    background-color: var(--primary-blue) !important; 
-    color: white !important;                        
+    background-color: var(--primary-blue) !important;
+    color: white !important;
     border: 1px solid var(--primary-blue);
     padding: 10px 25px;
     border-radius: 8px;
@@ -1926,7 +1991,7 @@ header h1 {
 .btn-change-photo:hover {
     background-color: var(--primary-dark) !important;
     color: white !important;
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);  
+    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
     transform: translateY(-2px);
 }
 
@@ -1957,7 +2022,8 @@ header h1 {
 }
 
 .form-control:read-only {
-    background-color: #f0f0f0; /* For fixed roles/emails */
+    background-color: #f0f0f0;
+    /* For fixed roles/emails */
     cursor: not-allowed;
 }
 
@@ -2052,7 +2118,7 @@ header h1 {
 .btn-action-card:hover {
     transform: translateY(-8px);
     filter: brightness(1.1);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
 /* Specific Colors matching image_5e29df.png */
@@ -2075,6 +2141,7 @@ header h1 {
     .welcome-header {
         font-size: 1.8rem;
     }
+
     .btn-action-card {
         height: 100px;
         font-size: 1.2rem;
@@ -2100,7 +2167,7 @@ header h1 {
 }
 
 /* Active state (The blue color seen in your screenshot) */
-.dropdown-item.active, 
+.dropdown-item.active,
 .dropdown-item:active {
     background-color: var(--primary-blue) !important;
     color: white !important;
@@ -2119,9 +2186,8 @@ header h1 {
    ========================= */
 #search {
     border-radius: 5px;
-    padding: 12px 20px;
     border: 1px solid #ddd;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     margin-bottom: 25px !important;
 }
@@ -2137,10 +2203,12 @@ header h1 {
    ========================= */
 .table-responsive {
     background: var(--white);
-    padding: 1px; /* Prevents border clipping */
+    padding: 1px;
+    /* Prevents border clipping */
     border-radius: var(--border-radius);
     box-shadow: var(--card-shadow);
-    overflow: hidden; /* Ensures rounded corners on table */
+    overflow: hidden;
+    /* Ensures rounded corners on table */
 }
 
 .table {
@@ -2305,7 +2373,8 @@ header h1 {
     text-decoration: none;
 }
 
-.btn-edit:hover, .btn-delete:hover {
+.btn-edit:hover,
+.btn-delete:hover {
     filter: brightness(1.1);
     transform: translateY(-1px);
     color: white;
@@ -2315,7 +2384,7 @@ header h1 {
    TRAINER MYPROFILE LAYOUT
    ========================= */
 
-   /* Centered Profile Card Styling */
+/* Centered Profile Card Styling */
 .profile-card {
     border-radius: 1.5rem;
     background-color: #ffffff;
@@ -2334,12 +2403,13 @@ header h1 {
 }
 
 .text-primary {
-    color: #007bff !important; /* Adjust to match your specific Blue */
+    color: #007bff !important;
+    /* Adjust to match your specific Blue */
 }
 
 .list-group-item {
     font-size: 1.05rem;
-    border-color: rgba(0,0,0,0.05) !important;
+    border-color: rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Restrict avatar size in edit mode */
@@ -2350,7 +2420,8 @@ header h1 {
 }
 
 /* Form Styling */
-.form-control, .form-select {
+.form-control,
+.form-select {
     border-radius: 8px;
     padding: 0.6rem 1rem;
     border: 1px solid #dee2e6;

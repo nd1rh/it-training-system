@@ -26,7 +26,7 @@
     <!-- =========================
          ABOUT PAGE
     ========================== -->
-    <div class="container about-page" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container about-page" style="position: relative; z-index: 1;">
 
         <!-- =========================
              INTRO SECTION
@@ -89,25 +89,25 @@
 
                 <div class="col-md-3 col-sm-6 team-member">
                     <img src="<?= base_url('assets/images/afiqah.jpeg') ?>" alt="Nurulain Afiqah">
-                    <h5>Nurulain Afiqah binti Rameli</h5>
+                    <h5>Nurulain Afiqah</h5>
                     <p>Project Manager</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 team-member">
                     <img src="<?= base_url('assets/images/nad.jpeg') ?>" alt="Aina Nadirah">
-                    <h5>Aina Nadirah binti Kamarul Bahrin</h5>
+                    <h5>Aina Nadirah</h5>
                     <p>Web Developer</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 team-member">
                     <img src="<?= base_url('assets/images/nurina.jpeg') ?>" alt="Nurina Afiqah">
-                    <h5>Nurina Afiqah binti Zulkifli</h5>
+                    <h5>Nurina Afiqah</h5>
                     <p>UI/UX Designer</p>
                 </div>
 
                 <div class="col-md-3 col-sm-6 team-member">
                     <img src="<?= base_url('assets/images/dijah.jpeg') ?>" alt="Zukhruful Khadijah">
-                    <h5>Zukhruful Khadijah Amni binti Jamnul Azhar</h5>
+                    <h5>Zukhruful Khadijah</h5>
                     <p>System Analyst</p>
                 </div>
 

@@ -6,7 +6,7 @@
     <div class="bg-circle bg-circle-4"></div>
 </div>
 
-<div class="container mt-5 text-center" style="position: relative; z-index: 1; padding-top: 100px;">
+<div class="container mt-5 text-center" style="position: relative; z-index: 1;">
    
     <div class="dashboard-container mt-5">
         <h1 class="welcome-header"> Welcome, <?= esc(session()->get('full_name')) ?>!

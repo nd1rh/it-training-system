@@ -8,24 +8,21 @@
 
 <div class="payment-page-wrapper">
     <div class="container payment-page">
-        <!-- =========================
-             PAGE TITLE
-        ========================== -->
+
+        <!-- PAGE TITLE -->
         <section class="payment-header text-center fade-in-up" style="animation-delay: 0.1s;">
             <h2 class="page-title">Course Payment</h2>
         </section>
 
-        <!-- =========================
-             FLASH MESSAGES
-        ========================== -->
+        <!-- FLASH MESSAGES -->
         <?php if (session()->getFlashdata('error')): ?>
-            <div class="alert alert-danger text-center fade-in-up" style="animation-delay: 0.2s;">
+            <div class="alert alert-danger text-center fade-in-up">
                 <?= session()->getFlashdata('error') ?>
             </div>
         <?php endif; ?>
 
         <?php if (session()->getFlashdata('success')): ?>
-            <div class="alert alert-success text-center fade-in-up" style="animation-delay: 0.2s;">
+            <div class="alert alert-success text-center fade-in-up">
                 <?= session()->getFlashdata('success') ?>
             </div>
         <?php endif; ?>
@@ -33,13 +30,10 @@
         <?php if ($course): ?>
 
             <div class="payment-content-wrapper">
-                <!-- =========================
-                     COURSE SUMMARY
-                ========================== -->
+
+                <!-- COURSE SUMMARY -->
                 <div class="payment-summary-card fade-in-up" style="animation-delay: 0.3s;">
-                    <div class="payment-summary-header">
-                        <h3 class="payment-course-title"><?= esc($course['course_name']) ?></h3>
-                    </div>
+                    <h3 class="payment-course-title"><?= esc($course['course_name']) ?></h3>
 
                     <p class="payment-course-desc">
                         <?= esc($course['course_desc']) ?>
@@ -47,40 +41,41 @@
 
                     <div class="payment-info-grid">
                         <div class="payment-info-item">
-                            <span class="payment-info-label"><i class="fas fa-clock me-2"></i>Duration</span>
-                            <span class="payment-info-value"><?= esc($course['course_duration']) ?> hours</span>
+                            <span class="payment-info-label">Duration</span>
+                            <span class="payment-info-value">
+                                <?= esc($course['course_duration']) ?> hours
+                            </span>
                         </div>
-                        
+
                         <div class="payment-info-item payment-amount-highlight">
-                            <span class="payment-info-label"><i class="fas fa-money-bill-wave me-2"></i>Amount to Pay</span>
-                            <span class="payment-info-value payment-amount">RM <?= number_format($course['price'], 2) ?></span>
+                            <span class="payment-info-label">Amount to Pay</span>
+                            <span class="payment-info-value payment-amount">
+                                RM <?= number_format($course['price'], 2) ?>
+                            </span>
                         </div>
                     </div>
                 </div>
 
-                <!-- =========================
-                     PAYMENT FORM
-                ========================== -->
+                <!-- PAYMENT FORM -->
                 <div class="payment-form-card fade-in-up" style="animation-delay: 0.4s;">
-                    <h4 class="payment-form-title"><i class="fas fa-credit-card me-2"></i>Payment Details</h4>
-                    
-                    <form method="post" action="<?= site_url('payment/process') ?>" class="payment-form">
+                    <h4 class="payment-form-title">Payment Details</h4>
+
+                    <form method="post"
+                        action="<?= site_url('payment/process') ?>"
+                        id="paymentForm">
+
                         <?= csrf_field() ?>
 
                         <input type="hidden" name="course_id" value="<?= $course['course_id'] ?>">
                         <input type="hidden" name="amount" value="<?= $course['price'] ?>">
 
                         <div class="form-group-payment">
-                            <label for="payment_method" class="form-label-payment">
-                                <i class="fas fa-wallet me-2"></i>Select Payment Method
-                            </label>
-
-                            <select
-                                name="payment_method"
+                            <label for="payment_method">Payment Method</label>
+                            <select name="payment_method"
                                 id="payment_method"
                                 class="form-select-payment"
                                 required>
-                                <option value="Internet Banking"><i class="fas fa-university"></i> Internet Banking</option>
+                                <option value="Internet Banking">Internet Banking</option>
                                 <option value="DuitNow">DuitNow</option>
                                 <option value="Touch n Go Ewallet">Touch n Go E-Wallet</option>
                             </select>
@@ -88,24 +83,24 @@
 
                         <div class="payment-actions">
                             <button type="submit" class="btn-pay-now">
-                                <i class="fas fa-credit-card me-2"></i><span>Pay Now</span>
+                                Pay Now
                             </button>
                         </div>
+
                     </form>
                 </div>
             </div>
 
-            <!-- Back Button -->
-            <div class="text-center mt-4 fade-in-up" style="animation-delay: 0.5s;">
-                <a
-                    href="<?= site_url('courses/detail/' . $course['course_id']) ?>"
+            <!-- BACK BUTTON -->
+            <div class="text-center mt-4">
+                <a href="<?= site_url('courses/detail/' . $course['course_id']) ?>"
                     class="btn-back-course">
-                    <i class="fas fa-arrow-left me-2"></i>Back to Course
+                    Back to Course
                 </a>
             </div>
 
         <?php else: ?>
-            <div class="alert alert-warning text-center fade-in-up">
+            <div class="alert alert-warning text-center">
                 Course not found.
             </div>
         <?php endif; ?>
@@ -113,15 +108,31 @@
     </div>
 </div>
 
+<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- CONFIRM PAYMENT SCRIPT -->
 <script>
     $(document).ready(function() {
-        // Add animated background class to body
+
         $('body').addClass('animated-background');
-        
-        // Trigger animations on page load
-        $('.fade-in-up').each(function(index) {
-            $(this).css('opacity', '1');
+
+        $('#paymentForm').on('submit', function(e) {
+
+            const paymentMethod = $('#payment_method').val();
+            const amount = 'RM <?= number_format($course['price'], 2) ?>';
+
+            const confirmPayment = confirm(
+                "Confirm Payment\n\n" +
+                "Payment Method: " + paymentMethod + "\n" +
+                "Amount: " + amount + "\n\n" +
+                "Are you sure you want to proceed?"
+            );
+
+            if (!confirmPayment) {
+                e.preventDefault(); // stop form submit
+            }
         });
+
     });
 </script>

@@ -17,17 +17,33 @@ class TrainerController extends BaseController
     // Public Trainer Listing
     public function trainer()
     {
-        // Fetch all trainers from database
-        $trainers = $this->trainerModel->findAll();
+        $rows = $this->trainerModel->getTrainersWithCourses();
 
-        $data = [
-            'trainers' => $trainers
-        ];
+        $trainers = [];
 
-        // Load the public trainer view
-        echo view('templates/header'); // optional
-        echo view('trainer_view', $data);
-        echo view('templates/footer'); // optional
+        foreach ($rows as $row) {
+            $id = $row['trainer_id'];
+
+            if (!isset($trainers[$id])) {
+                $trainers[$id] = [
+                    'trainer_id' => $row['trainer_id'],
+                    'full_name' => $row['full_name'],
+                    'email' => $row['email'],
+                    'specialization' => $row['specialization'],
+                    'experience_years' => $row['experience_years'],
+                    'profile_pic' => $row['profile_pic'],
+                    'courses' => []
+                ];
+            }
+
+            if (!empty($row['course_name'])) {
+                $trainers[$id]['courses'][] = $row['course_name'];
+            }
+        }
+
+        echo view('templates/header');
+        echo view('trainer_view', ['trainers' => $trainers]);
+        echo view('templates/footer');
     }
 
     public function myProfile()

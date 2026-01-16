@@ -12,7 +12,6 @@ class TrainerModel extends Model
         'full_name',
         'email',
         'password',
-        'phone_number',
         'gender',
         'specialization',
         'experience_years',
@@ -23,5 +22,16 @@ class TrainerModel extends Model
     public function getTrainerProfile($id)
     {
         return $this->where('trainer_id', $id)->first();
+    }
+
+    public function getTrainersWithCourses()
+    {
+        return $this->select('
+                trainers.*,
+                courses.course_name
+            ')
+            ->join('trainings', 'trainings.trainer_id = trainers.trainer_id', 'left')
+            ->join('courses', 'courses.course_id = trainings.course_id', 'left')
+            ->findAll();
     }
 }

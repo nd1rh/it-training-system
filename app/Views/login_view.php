@@ -29,7 +29,7 @@
     <!-- =========================
          LOGIN PAGE
     ========================== -->
-    <div class="container login-page" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container login-page" style="position: relative; z-index: 1;">
         <div class="row justify-content-center">
             <div class="col-md-6 col-lg-5">
 

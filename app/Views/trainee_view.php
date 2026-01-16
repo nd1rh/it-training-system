@@ -28,7 +28,7 @@
     <div class="container" style="position: relative; z-index: 1; padding-top: 20px; padding-bottom: 20px;">
         <h1 class="page-title mb-3" style="margin-top: 0;">Trainee Details</h1>
 
-        <div class="position-relative" style="max-width: 500px; margin: 0 auto 20px auto;">
+        <div class="position-relative">
             <i class="fas fa-search position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%); color: #6c757d; z-index: 10;"></i>
             <input type="text" id="search" class="form-control mb-3" placeholder="Search by Name, Email or Course" style="padding-left: 45px;">
         </div>
@@ -40,7 +40,7 @@
                         <th>ID</th>
                         <th>Name</th>
                         <th>Email</th>
-                        <th>Gender</th>
+                        <th>Phone Number</th>
                         <th>Course</th>
                         <th>Payment Status</th>
                         <th>Actions</th>
@@ -62,7 +62,7 @@
                                 <td><?= esc($row['trainee_id']) ?></td>
                                 <td><?= esc($row['full_name']) ?></td>
                                 <td><?= esc($row['email']) ?></td>
-                                <td><?= esc($row['gender'] ?? '-') ?></td>
+                                <td><?= esc($row['phone_num'] ?? '-') ?></td>
                                 <td><?= esc($row['course_name'] ?? '-') ?></td>
                                 <td>
                                     <?php if (!$isFreeCourse): ?>
@@ -132,7 +132,7 @@
                                         <td>${row.trainee_id}</td>
                                         <td>${row.full_name}</td>
                                         <td>${row.email}</td>
-                                        <td>${row.gender ?? '-'}</td>
+                                        <td>${row.phone_num ?? '-'}</td>
                                         <td>${row.course_name ?? '-'}</td>
                                         <td>${badge}</td>
                                         <td>

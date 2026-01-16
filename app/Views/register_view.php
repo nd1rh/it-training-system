@@ -29,7 +29,7 @@
     <!-- =========================
          REGISTER PAGE
     ========================== -->
-    <div class="container register-page" style="position: relative; z-index: 1; padding-top: 100px;">
+    <div class="container register-page" style="position: relative; z-index: 1;">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-7">
 
