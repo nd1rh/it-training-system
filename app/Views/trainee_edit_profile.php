@@ -77,10 +77,20 @@
 
                     <div class="form-group">
                         <label>Gender</label>
-                        <select name="gender" class="form-control">
-                            <option value="male" <?= ($trainee['gender'] ?? '') == 'male' ? 'selected' : '' ?>>Male</option>
-                            <option value="female" <?= ($trainee['gender'] ?? '') == 'female' ? 'selected' : '' ?>>Female</option>
-                        </select>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male"
+                                <?= strtolower($trainee['gender'] ?? '') == 'male' ? 'checked' : '' ?>>
+                            <label class="form-check-label" for="genderMale">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female"
+                                <?= strtolower($trainee['gender'] ?? '') == 'female' ? 'checked' : '' ?>>
+                            <label class="form-check-label" for="genderFemale">
+                                Female
+                            </label>
+                        </div>
                     </div>
 
                     <div class="mb-3">
