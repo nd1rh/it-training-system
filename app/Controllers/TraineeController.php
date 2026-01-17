@@ -6,32 +6,42 @@ use App\Models\TraineeModel;
 
 class TraineeController extends BaseController
 {
+    protected $traineeModel;
+
+    public function __construct()
+    {
+        $this->traineeModel = new TraineeModel();
+    }
+
+    /**
+     * Display all trainees
+     */
     public function index()
-{
-    $model = new \App\Models\TraineeModel();
-    // Don't use $model->findAll(); use your custom function:
-    $data['trainees'] = $model->getTraineesWithDetails(); // get all trainees with course/payment info
+    {
+        $data['trainees'] = $this->traineeModel->getTraineesWithDetails();
 
         echo view('templates/header');
         echo view('trainee_view', $data);
         echo view('templates/footer');
     }
 
+    /**
+     * AJAX search trainees
+     */
     public function search()
     {
-        $model = new \App\Models\TraineeModel();
         $keyword = $this->request->getGet('keyword');
-
-        // Use the custom function that has the JOINs
-        $data = $model->getTraineesWithDetails($keyword);
+        $data = $this->traineeModel->getTraineesWithDetails($keyword);
 
         return $this->response->setJSON($data);
     }
 
+    /**
+     * Edit trainee info
+     */
     public function edit($traineeId)
     {
-        $model = new \App\Models\TraineeModel();
-        $trainee = $model->find($traineeId);
+        $trainee = $this->traineeModel->find($traineeId);
 
         if (!$trainee) {
             return redirect()->to('configure/trainee')->with('error', 'Trainee not found.');
@@ -44,14 +54,13 @@ class TraineeController extends BaseController
         echo view('templates/footer');
     }
 
+    /**
+     * Update trainee info
+     */
     public function update($traineeId)
     {
-        $model = new \App\Models\TraineeModel();
-        $trainee = $model->find($traineeId);
-
-        if (!$trainee) {
-            return redirect()->to('configure/trainee')->with('error', 'Trainee not found.');
-        }
+        $trainee = $this->traineeModel->find($traineeId);
+        if (!$trainee) return redirect()->back()->with('error', 'Trainee not found.');
 
         $rules = [
             'full_name' => 'required|min_length[2]',
@@ -59,9 +68,7 @@ class TraineeController extends BaseController
         ];
 
         if (!$this->validate($rules)) {
-            return redirect()->back()
-                ->withInput()
-                ->with('errors', $this->validator->getErrors());
+            return redirect()->back()->withInput()->with('errors', $this->validator->getErrors());
         }
 
         $data = [
@@ -72,7 +79,6 @@ class TraineeController extends BaseController
             'date_of_birth' => $this->request->getPost('date_of_birth')
         ];
 
-        // Handle password update if provided
         $newPassword = $this->request->getPost('password');
         if (!empty($newPassword)) {
             if (strlen($newPassword) < 8) {
@@ -81,30 +87,28 @@ class TraineeController extends BaseController
             $data['password'] = password_hash($newPassword, PASSWORD_DEFAULT);
         }
 
-        if ($model->update($traineeId, $data)) {
+        if ($this->traineeModel->update($traineeId, $data)) {
             return redirect()->to('configure/trainee')->with('success', 'Trainee updated successfully!');
-        } else {
-            return redirect()->back()->with('error', 'Failed to update trainee.');
         }
+
+        return redirect()->back()->with('error', 'Failed to update trainee.');
     }
 
+    /**
+     * Delete trainee and related enrollments
+     */
     public function delete($traineeId)
     {
-        $model = new \App\Models\TraineeModel();
-        $trainee = $model->find($traineeId);
+        $trainee = $this->traineeModel->find($traineeId);
+        if (!$trainee) return redirect()->to('configure/trainee')->with('error', 'Trainee not found.');
 
-        if (!$trainee) {
-            return redirect()->to('configure/trainee')->with('error', 'Trainee not found.');
-        }
-
-        // Also delete related enrollments
         $enrollModel = new \App\Models\CourseEnrollmentModel();
         $enrollModel->where('trainee_id', $traineeId)->delete();
 
-        if ($model->delete($traineeId)) {
+        if ($this->traineeModel->delete($traineeId)) {
             return redirect()->to('configure/trainee')->with('success', 'Trainee deleted successfully!');
-        } else {
-            return redirect()->to('configure/trainee')->with('error', 'Failed to delete trainee.');
         }
+
+        return redirect()->to('configure/trainee')->with('error', 'Failed to delete trainee.');
     }
 }
