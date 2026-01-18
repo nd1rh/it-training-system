@@ -12,7 +12,6 @@ class TraineeProfileController extends BaseController
         $userId = $session->get('user_id');
         $role   = $session->get('role');
 
-        // Security check: must be logged in and must be a trainee
         if (!$session->get('isLoggedIn') || $role !== 'trainee') {
             return redirect()->to('/login');
         }
@@ -49,37 +48,29 @@ class TraineeProfileController extends BaseController
         $session = session();
         $traineeId = $session->get('user_id');
 
-        // 1. Prepare data - Map HTML 'name' to Database 'column'
         $data = [
             'full_name'     => $this->request->getPost('full_name'),
             'email'         => $this->request->getPost('email'),
-            'phone_num'     => $this->request->getPost('phone_number'), // View: phone_number -> DB: phone_num
-            'date_of_birth' => $this->request->getPost('dob'),          // View: dob -> DB: date_of_birth
+            'phone_num'     => $this->request->getPost('phone_number'), 
+            'date_of_birth' => $this->request->getPost('dob'),    
             'gender'        => $this->request->getPost('gender')
         ];
 
-        // 2. Handle Password Update (if provided)
         $newPassword = $this->request->getPost('password');
         if (!empty($newPassword)) {
-            // Validate password length
             if (strlen($newPassword) < 8) {
                 return redirect()->back()->with('error', 'Password must be at least 8 characters long.');
             }
-            // Hash the new password
             $data['password'] = password_hash($newPassword, PASSWORD_DEFAULT);
         }
 
-        // 3. Handle File Upload
         $file = $this->request->getFile('profile_pic');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
             $file->move('uploads/trainees', $newName);
             $data['profile_pic'] = 'uploads/trainees/' . $newName;
-
-            // Optional: Delete old picture logic here
         }
 
-        // 4. Update Database
         if ($traineeModel->update($traineeId, $data)) {
             return redirect()->to('trainee/profile')->with('success', 'Profile updated successfully!');
         } else {
@@ -97,7 +88,6 @@ class TraineeProfileController extends BaseController
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
 
-            // Match the path used in update_profile
             $file->move(FCPATH . 'uploads/trainees/', $newName);
             $savePath = 'uploads/trainees/' . $newName;
 

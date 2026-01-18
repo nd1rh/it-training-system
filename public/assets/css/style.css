@@ -2474,3 +2474,275 @@ header h1 {
 .course-box:hover {
     transform: translateY(-5px);
 }
+
+.certificate-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Certificate Container */
+.certificate-container {
+    background: #ffffff;
+    padding: 60px 80px;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    min-height: 600px;
+    background-image: repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(218, 165, 32, 0.03) 2px, rgba(218, 165, 32, 0.03) 4px);
+}
+
+/* Borders */
+.certificate-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 10px solid #D4AF37;
+    border-radius: 8px;
+    pointer-events: none;
+    box-shadow: inset 0 0 0 2px #FFD700;
+}
+
+.certificate-inner-border {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border: 2px solid #FFD700;
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+/* Corner Decorations */
+.corner-decoration {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #D4AF37;
+}
+
+.corner-top-left {
+    top: 35px;
+    left: 35px;
+    border-right: none;
+    border-bottom: none;
+}
+
+.corner-top-right {
+    top: 35px;
+    right: 35px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.corner-bottom-left {
+    bottom: 35px;
+    left: 35px;
+    border-top: none;
+    border-right: none;
+}
+
+.corner-bottom-right {
+    bottom: 35px;
+    right: 35px;
+    border-top: none;
+    border-left: none;
+}
+
+/* Header */
+.certificate-header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.certificate-icon i {
+    font-size: 60px;
+    color: #D4AF37;
+    opacity: 0.4;
+    margin-bottom: 20px;
+}
+
+.certificate-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: #D4AF37;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.2);
+}
+
+.header-line {
+    width: 250px;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #D4AF37, #FFD700, #D4AF37, transparent);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+/* Body */
+.certificate-body {
+    text-align: center;
+    margin: 40px 0;
+    position: relative;
+    z-index: 1;
+}
+
+.certify-text {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.recipient-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    color: #333;
+    margin: 20px 0;
+    padding: 15px 0;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    letter-spacing: 1px;
+}
+
+.course-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: #D4AF37;
+    margin: 20px 0;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(212, 175, 55, 0.15);
+}
+
+.completion-date {
+    margin: 25px 0;
+    font-size: 16px;
+    color: #666;
+    font-weight: 400;
+}
+
+.completion-date i {
+    color: #D4AF37;
+    margin-right: 10px;
+}
+
+/* Footer */
+.certificate-footer {
+    margin-top: 60px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.signature-left,
+.signature-right,
+.certificate-seal {
+    text-align: center;
+    flex: 1;
+}
+
+.signature-line {
+    border-top: 2px solid #D4AF37;
+    width: 200px;
+    margin: 0 auto 10px;
+    padding-top: 10px;
+}
+
+.signature-left p,
+.signature-right p {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    margin: 5px 0;
+}
+
+.signature-left p:last-child,
+.signature-right p:last-child {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin-top: 30px;
+}
+
+.certificate-seal .seal-circle {
+    width: 140px;
+    height: 140px;
+    border: 5px solid #DC143C;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(220, 20, 60, 0.1) 0%, rgba(220, 20, 60, 0.05) 100%);
+    box-shadow: 0 0 20px rgba(220, 20, 60, 0.3), inset 0 0 20px rgba(220, 20, 60, 0.1);
+}
+
+.certificate-seal .seal-inner {
+    width: 110px;
+    height: 110px;
+    border: 3px solid #DC143C;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.certificate-seal i {
+    font-size: 45px;
+    color: #DC143C;
+}
+
+.seal-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #DC143C;
+    margin-top: 10px;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px rgba(220, 20, 60, 0.2);
+}
+
+.seal-label {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Print Button */
+.certificate-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.print-btn {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.4);
+    transition: all 0.3s ease;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.print-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+}

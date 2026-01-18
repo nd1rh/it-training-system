@@ -1,4 +1,3 @@
-<!-- Animated Background Elements -->
 <div class="bg-animation">
     <div class="bg-circle bg-circle-1"></div>
     <div class="bg-circle bg-circle-2"></div>
@@ -16,7 +15,6 @@
 
             <div class="edit-content-wrapper">
 
-                <!-- Profile Photo -->
                 <div class="photo-upload-section">
                     <img src="<?= base_url($trainee['profile_pic'] ?: 'uploads/trainees/default.png') ?>"
                         alt="Profile Preview"
@@ -37,7 +35,6 @@
                     </div>
                 </div>
 
-                <!-- Form Section -->
                 <div class="edit-form-section">
 
                     <div class="form-group">
@@ -118,7 +115,6 @@
     </div>
 </div>
 
-<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     $(document).ready(function() {

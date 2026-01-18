@@ -14,9 +14,6 @@ class ManageCourseController extends BaseController
         helper('form');
     }
 
-    // ------------------------------
-    // Display course list
-    // ------------------------------
     public function index()
     {
         $data['courses'] = $this->courseModel->findAll();
@@ -25,9 +22,6 @@ class ManageCourseController extends BaseController
         echo view('templates/footer');
     }
 
-    // ------------------------------
-    // AJAX search
-    // ------------------------------
     public function search()
     {
         $keyword = $this->request->getGet('keyword');
@@ -39,9 +33,6 @@ class ManageCourseController extends BaseController
         return $this->response->setJSON($courses);
     }
 
-    // ------------------------------
-    // Show Add Course form
-    // ------------------------------
     public function add()
     {
         echo view('templates/header');
@@ -49,9 +40,6 @@ class ManageCourseController extends BaseController
         echo view('templates/footer');
     }
 
-    // -----------------
-    // Save new course 
-    // -----------------
     public function save()
     {
         $rules = [
@@ -73,7 +61,6 @@ class ManageCourseController extends BaseController
             'price'           => $this->request->getPost('price'),
         ];
 
-        // Optional: handle image upload
         $file = $this->request->getFile('course_image');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
@@ -86,9 +73,6 @@ class ManageCourseController extends BaseController
         return redirect()->to('/configure/course')->with('success', 'Course added successfully!');
     }
 
-    // ------------------------------
-    // Edit course
-    // ------------------------------
     public function edit($courseId)
     {
         $course = $this->courseModel->find($courseId);
@@ -102,9 +86,6 @@ class ManageCourseController extends BaseController
         echo view('templates/footer');
     }
 
-    // ------------------------------
-    // Update course
-    // ------------------------------
     public function update($courseId)
     {
         $course = $this->courseModel->find($courseId);
@@ -131,7 +112,6 @@ class ManageCourseController extends BaseController
             'price'           => $this->request->getPost('price'),
         ];
 
-        // Optional: handle new image
         $file = $this->request->getFile('course_image');
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
@@ -144,9 +124,6 @@ class ManageCourseController extends BaseController
         return redirect()->to('/configure/course')->with('success', 'Course updated successfully!');
     }
 
-    // ------------------------------
-    // Delete course
-    // ------------------------------
     public function delete($courseId)
     {
         $course = $this->courseModel->find($courseId);

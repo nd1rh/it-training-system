@@ -12,24 +12,18 @@ class TrainerProfileController extends BaseController
         $userId = $session->get('user_id');
         $role   = $session->get('role');
 
-        // 1. Verify the user is logged in and is a trainer
         if (!$session->get('isLoggedIn') || $role !== 'trainer') {
             return redirect()->to('/login');
         }
 
-        // 2. Fetch the data (This is the 'profile' logic you asked for)
         $model = new TrainerModel();
 
-        // Use find($userId) if your primary key is trainer_id, 
-        // or where('trainer_id', $userId)->first() to be specific.
         $data['trainer'] = $model->where('trainer_id', $userId)->first();
 
-        // 3. Handle case where trainer is not found in database
         if (!$data['trainer']) {
             return redirect()->to('/login')->with('error', 'Profile not found.');
         }
 
-        // 4. Render the views
         echo view('templates/header');
         echo view('trainer_profile_view', $data);
         echo view('templates/footer');
@@ -38,20 +32,17 @@ class TrainerProfileController extends BaseController
     public function update_profile()
     {
         $session = session();
-        $trainerId = $session->get('user_id'); // Get ID from session
+        $trainerId = $session->get('user_id');
 
         $file = $this->request->getFile('profile_pic');
-        $profilePicPath = $this->request->getPost('old_pic'); // Keep current if no new upload
+        $profilePicPath = $this->request->getPost('old_pic'); 
 
-        // Handle Image Upload
         if ($file && $file->isValid() && !$file->hasMoved()) {
             $newName = $file->getRandomName();
-            // Consistent path: uploads/trainers/
             $file->move(FCPATH . 'uploads/trainers/', $newName);
             $profilePicPath = 'uploads/trainers/' . $newName;
         }
 
-        // Data from Form
         $updateData = [
             'full_name'        => $this->request->getPost('full_name'),
             'email'            => $this->request->getPost('email'),
@@ -62,14 +53,11 @@ class TrainerProfileController extends BaseController
             'profile_pic'      => $profilePicPath
         ];
 
-        // Handle Password Update (if provided)
         $newPassword = $this->request->getPost('password');
         if (!empty($newPassword)) {
-            // Validate password length
             if (strlen($newPassword) < 8) {
                 return redirect()->back()->with('error', 'Password must be at least 8 characters long.');
             }
-            // Hash the new password
             $updateData['password'] = password_hash($newPassword, PASSWORD_DEFAULT);
         }
 
@@ -95,7 +83,7 @@ class TrainerProfileController extends BaseController
         }
 
         echo view('templates/header');
-        echo view('trainer_edit_profile', $data); // Make sure your edit file is named this
+        echo view('trainer_edit_profile', $data);
         echo view('templates/footer');
     }
 
@@ -107,10 +95,7 @@ class TrainerProfileController extends BaseController
         $file = $this->request->getFile('profile_pic');
 
         if ($file->isValid() && !$file->hasMoved()) {
-            // Generate a unique name to avoid overwriting
             $newName = $file->getRandomName();
-
-            // Move file to public/uploads/profile_pics
             $file->move(ROOTPATH . 'public/uploads/profile_pics', $newName);
 
             $model = new \App\Models\TrainerModel();

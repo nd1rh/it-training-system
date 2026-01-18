@@ -23,9 +23,6 @@ class TraineeModel extends Model
     protected $createdField = 'created_at';
     protected $updatedField = 'created_at';
 
-    /**
-     * Get all trainees with course info, payment, and status
-     */
     public function getTraineesWithDetails($keyword = null)
     {
         $builder = $this->db->table('trainees t');

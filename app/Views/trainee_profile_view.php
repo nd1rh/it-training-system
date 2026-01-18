@@ -1,4 +1,3 @@
-<!-- Animated Background Elements -->
 <div class="bg-animation">
     <div class="bg-circle bg-circle-1"></div>
     <div class="bg-circle bg-circle-2"></div>
@@ -15,7 +14,6 @@
                 <div class="card-body">
                     <h2 class="text-primary fw-bold mb-4">My Profile</h2>
 
-                    <!-- Profile Picture -->
                     <form action="<?= base_url('trainee/update_photo') ?>"
                         method="POST"
                         enctype="multipart/form-data"
@@ -40,13 +38,11 @@
                         </div>
                     </form>
 
-                    <!-- Name & Role -->
                     <h1 class="fw-bold text-primary mb-1"><?= esc($trainee['full_name']) ?></h1>
                     <p class="badge bg-light text-muted px-3 py-2 rounded-pill">
                         Trainee
                     </p>
 
-                    <!-- Details -->
                     <div class="mt-5 text-start">
                         <div class="list-group list-group-flush border-top">
 
@@ -84,7 +80,6 @@
                         </div>
                     </div>
 
-                    <!-- Actions -->
                     <div class="mt-5">
                         <a href="<?= base_url('trainee/edit_profile') ?>"
                             class="btn btn-primary px-5 py-2 fw-bold">
@@ -98,14 +93,12 @@
     </div>
 </div>
 
-<!-- Scripts -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     $(document).ready(function() {
         $('body').addClass('animated-background');
     });
 
-    // Auto upload + preview
     const imageUpload = document.getElementById('imageUpload');
     const profilePreview = document.getElementById('profilePreview');
     const profilePicForm = document.getElementById('profilePicForm');

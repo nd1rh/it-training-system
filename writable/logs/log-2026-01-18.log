@@ -1,0 +1,537 @@
+ERROR - 2026-01-18 01:25:18 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'it_training_db', 3306, '', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp8\htdocs\it-training-system\app\Controllers\HomeController.php(13): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\HomeController->index()
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp8\htdocs\it-training-system\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\xampp8\htdocs\it-training-system\app\Controllers\HomeController.php(13): CodeIgniter\BaseModel->findAll()
+#6 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\HomeController->index()
+#7 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#13 {main}
+CRITICAL - 2026-01-18 01:25:18 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: /]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `courses`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\HomeController.php(13): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\HomeController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\HomeController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-18 01:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:25:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2026-01-18 01:25:58 --> ErrorException: Undefined array key "trainer_name"
+[Method: GET, Route: courses/detail/1]
+in APPPATH\Views\courses\detail_view.php on line 81.
+ 1 APPPATH\Views\courses\detail_view.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "trainer_name"', 'C:\\xampp8\\htdocs\\it-training-system\\app\\Views\\courses\\detail_view.php', 81)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp8\\htdocs\\it-training-system\\app\\Views\\courses\\detail_view.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render('courses/detail_view', [], true)
+ 5 APPPATH\Controllers\CoursesController.php(128): view('courses/detail_view', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+ERROR - 2026-01-18 01:28:52 --> mysqli_sql_exception: Unknown column 'trainers.name' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp8\htdocs\it-training-system\app\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+#7 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#10 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#15 {main}
+CRITICAL - 2026-01-18 01:28:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.name' in 'field list'
+[Method: GET, Route: courses/detail/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:28:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:28:52 --> [Caused by] mysqli_sql_exception: Unknown column 'trainers.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+ERROR - 2026-01-18 01:28:57 --> mysqli_sql_exception: Unknown column 'trainers.name' in 'field list' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp8\htdocs\it-training-system\app\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+#7 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#10 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#15 {main}
+CRITICAL - 2026-01-18 01:28:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.name' in 'field list'
+[Method: GET, Route: courses/detail/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:28:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:28:57 --> [Caused by] mysqli_sql_exception: Unknown column 'trainers.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+ERROR - 2026-01-18 01:30:01 --> mysqli_sql_exception: Unknown column 'trainers.id' in 'on clause' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp8\htdocs\it-training-system\app\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+#7 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#10 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#15 {main}
+CRITICAL - 2026-01-18 01:30:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.id' in 'on clause'
+[Method: GET, Route: courses/detail/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:30:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'trainers.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:30:01 --> [Caused by] mysqli_sql_exception: Unknown column 'trainers.id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+ERROR - 2026-01-18 01:30:23 --> mysqli_sql_exception: Unknown column 'courses.trainer_id' in 'on clause' in C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp8\htdocs\it-training-system\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses...', 0)
+#1 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses...')
+#2 C:\xampp8\htdocs\it-training-system\system\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses...')
+#3 C:\xampp8\htdocs\it-training-system\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses...', Array, false)
+#4 C:\xampp8\htdocs\it-training-system\system\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp8\htdocs\it-training-system\system\BaseModel.php(715): CodeIgniter\Model->doFirst()
+#6 C:\xampp8\htdocs\it-training-system\app\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+#7 C:\xampp8\htdocs\it-training-system\app\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+#8 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+#9 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+#10 C:\xampp8\htdocs\it-training-system\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\xampp8\htdocs\it-training-system\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#12 C:\xampp8\htdocs\it-training-system\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\xampp8\htdocs\it-training-system\public\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 C:\xampp8\htdocs\it-training-system\system\rewrite.php(44): require_once('C:\\xampp8\\htdoc...')
+#15 {main}
+CRITICAL - 2026-01-18 01:30:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'courses.trainer_id' in 'on clause'
+[Method: GET, Route: courses/detail/1]
+in SYSTEMPATH\Database\BaseConnection.php on line 684.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:30:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'courses.trainer_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 2 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 4 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 6 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 7 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+ 9 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+10 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+CRITICAL - 2026-01-18 01:30:23 --> [Caused by] mysqli_sql_exception: Unknown column 'courses.trainer_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(729): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 3 SYSTEMPATH\Database\BaseConnection.php(646): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = \'1\'
+ LIMIT 1')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT `courses`.*, `trainers`.`full_name` AS `trainer_name`
+FROM `courses`
+JOIN `trainers` ON `trainers`.`trainer_id` = `courses`.`trainer_id`
+WHERE `courses`.`course_id` = :courses.course_id:
+ LIMIT 1', [...], false)
+ 5 SYSTEMPATH\Model.php(330): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(715): CodeIgniter\Model->doFirst()
+ 7 APPPATH\Models\CourseModel.php(50): CodeIgniter\BaseModel->first()
+ 8 APPPATH\Controllers\CoursesController.php(113): App\Models\CourseModel->getCourseWithTrainer('1')
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\CoursesController->detail('1')
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CoursesController))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp8\\htdocs\\it-training-system\\public\\index.php')
+DEBUG - 2026-01-18 01:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:34:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:45:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:46:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:49:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:52:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:52:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:52:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:54:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:54:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 01:56:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:00:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:04:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:05:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:06:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:13:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:19:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:19:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:33:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:33:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:34:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:35:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2026-01-18 02:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

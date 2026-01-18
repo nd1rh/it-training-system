@@ -7,8 +7,6 @@ use App\Models\TrainerModel;
 
 class Auth extends BaseController
 {
-    /* ===================== REGISTER ===================== */
-
     public function register()
     {
         echo view('templates/header');
@@ -29,13 +27,10 @@ class Auth extends BaseController
                 ->withInput()
                 ->with('errors', $this->validator->getErrors());
         }
-
-        // ROLE IS FIXED AS TRAINEE
         $role = 'trainee';
 
         $traineeModel = new TraineeModel();
 
-        // Check unique email
         if ($traineeModel->where('email', $this->request->getPost('email'))->first()) {
             return redirect()->back()
                 ->withInput()
@@ -54,7 +49,6 @@ class Auth extends BaseController
         $traineeModel->insert($data);
         $userId = $traineeModel->getInsertID();
 
-        // Create session
         session()->set([
             'user_id'    => $userId,
             'full_name'  => $data['full_name'],
@@ -64,8 +58,6 @@ class Auth extends BaseController
 
         return redirect()->to('trainee/dashboard');
     }
-
-    /* ===================== LOGIN ===================== */
 
     public function login()
     {
@@ -109,8 +101,6 @@ class Auth extends BaseController
 
         return redirect()->to('trainee/dashboard');
     }
-
-    /* ===================== LOGOUT ===================== */
 
     public function logout()
     {

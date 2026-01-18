@@ -23,7 +23,6 @@ class CoursesController extends BaseController
             return redirect()->to('login')->with('error', 'Please login first.');
         }
 
-        // Courses stats
         $builder = $this->db->table('course_enrollments');
         $builder->select("
         COUNT(*) AS courses_enrolled,
@@ -71,7 +70,6 @@ class CoursesController extends BaseController
         $courses = $builder->get()->getResultArray();
         $enrollModel = new CourseEnrollmentModel();
 
-        // Auto move completed courses
         foreach ($courses as $key => $course) {
             if ((int)$course['progress'] >= 100 && $course['status'] !== 'Completed') {
                 $enrollModel->update($course['course_enroll_id'], [
@@ -110,7 +108,7 @@ class CoursesController extends BaseController
 
     public function detail($course_id)
     {
-        $data['course'] = $this->courseModel->find($course_id);
+        $data['course'] = $this->courseModel->getCourseWithTrainer($course_id);
 
         if (!$data['course']) {
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound('Course not found');
@@ -154,17 +152,13 @@ class CoursesController extends BaseController
         $keyword = $this->request->getGet('keyword');
 
         if (empty($keyword)) {
-            // If no keyword, return all courses
-            $courses = $this->courseModel->limit(8)->findAll();
+            $courses = $this->courseModel->findAll();
         } else {
-            // Search by course name or description
             $courses = $this->courseModel
                 ->like('course_name', $keyword)
                 ->orLike('course_desc', $keyword)
                 ->findAll();
         }
-
-        // Build HTML response matching the home page structure
         $html = '';
 
         if (!empty($courses)) {

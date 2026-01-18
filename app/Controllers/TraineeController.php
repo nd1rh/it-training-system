@@ -13,9 +13,6 @@ class TraineeController extends BaseController
         $this->traineeModel = new TraineeModel();
     }
 
-    /**
-     * Display all trainees
-     */
     public function index()
     {
         $data['trainees'] = $this->traineeModel->getTraineesWithDetails();
@@ -25,9 +22,6 @@ class TraineeController extends BaseController
         echo view('templates/footer');
     }
 
-    /**
-     * AJAX search trainees
-     */
     public function search()
     {
         $keyword = $this->request->getGet('keyword');
@@ -36,9 +30,6 @@ class TraineeController extends BaseController
         return $this->response->setJSON($data);
     }
 
-    /**
-     * Edit trainee info
-     */
     public function edit($traineeId)
     {
         $trainee = $this->traineeModel->find($traineeId);
@@ -54,9 +45,6 @@ class TraineeController extends BaseController
         echo view('templates/footer');
     }
 
-    /**
-     * Update trainee info
-     */
     public function update($traineeId)
     {
         $trainee = $this->traineeModel->find($traineeId);
@@ -94,9 +82,6 @@ class TraineeController extends BaseController
         return redirect()->back()->with('error', 'Failed to update trainee.');
     }
 
-    /**
-     * Delete trainee and related enrollments
-     */
     public function delete($traineeId)
     {
         $trainee = $this->traineeModel->find($traineeId);

@@ -13,7 +13,6 @@
 
 <body class="animated-background">
 
-    <!-- Animated Background Elements -->
     <div class="bg-animation">
         <div class="bg-circle bg-circle-1"></div>
         <div class="bg-circle bg-circle-2"></div>
@@ -27,7 +26,6 @@
             <div class="course-detail-card fade-in-up">
                 <div class="course-detail-wrapper">
 
-                    <!-- Course Image -->
                     <?php if (!empty($course['course_image'])): ?>
                         <div class="course-image-container fade-in-up" style="animation-delay: 0.2s;">
                             <img src="<?= base_url($course['course_image']) ?>"
@@ -36,7 +34,6 @@
                         </div>
                     <?php endif; ?>
 
-                    <!-- Course Content -->
                     <div class="course-detail-content">
 
                         <h1 class="course-detail-title fade-in-up" style="animation-delay: 0.3s;">
@@ -72,9 +69,18 @@
                                     <?php endif; ?>
                                 </span>
                             </div>
+
+                            <div class="info-item">
+                                <span class="info-label">
+                                    <i class="fas fa-user me-2"></i>Trainer:
+                                </span>
+                                <span class="info-value">
+                                    <?= esc($course['trainer_name']) ?>
+                                </span>
+                            </div>
+
                         </div>
 
-                        <!-- ENROLL BUTTON -->
                         <div class="course-detail-actions fade-in-up" style="animation-delay: 0.6s;">
 
                             <?php if ($isEnrolled): ?>
@@ -92,7 +98,6 @@
 
                                 <?php if (floatval($course['price']) > 0): ?>
 
-                                    <!-- PAID COURSE -->
                                     <a href="<?= site_url('payment/' . $course['course_id']) ?>"
                                         class="btn-enroll">
                                         <i class="fas fa-credit-card me-2"></i>Pay & Enroll
@@ -100,7 +105,6 @@
 
                                 <?php else: ?>
 
-                                    <!-- FREE COURSE -->
                                     <a href="<?= site_url('enroll/' . $course['course_id']) ?>"
                                         class="btn-enroll"
                                         id="enrollBtn"
@@ -127,10 +131,8 @@
 
     </div>
 
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-    <!-- FREE COURSE CONFIRMATION SCRIPT -->
     <script>
         $(document).ready(function() {
 
@@ -147,7 +149,7 @@
                     );
 
                     if (!confirmEnroll) {
-                        e.preventDefault(); // stop redirect
+                        e.preventDefault();
                     }
                 }
             });

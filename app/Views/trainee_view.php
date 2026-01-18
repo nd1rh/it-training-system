@@ -5,19 +5,13 @@
     <meta charset="UTF-8">
     <title>Trainee Details</title>
 
-    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Animated Background Elements -->
     <div class="bg-animation">
         <div class="bg-circle bg-circle-1"></div>
         <div class="bg-circle bg-circle-2"></div>
@@ -51,13 +45,11 @@
                     <?php if (!empty($trainees)): ?>
                         <?php foreach ($trainees as $row): ?>
                             <?php
-                            // Payment badge
                             $payment = strtoupper($row['payment_status'] ?? 'UNPAID');
                             if ($payment === 'SUCCESS') $payment = 'PAID';
                             $coursePrice = floatval($row['price'] ?? 0);
                             $isFreeCourse = $coursePrice <= 0;
 
-                            // Course status badge (normalize spaces & capitalization)
                             $courseStatusRaw = $row['course_status'] ?? 'Enrolled';
                             $courseStatus = str_replace(' ', '_', strtolower($courseStatusRaw));
 
@@ -106,7 +98,6 @@
         </div>
     </div>
 
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $('#search').keyup(function() {
@@ -122,7 +113,6 @@
                     let html = '';
                     if (data.length > 0) {
                         data.forEach(function(row) {
-                            // Payment badge
                             let payment = (row.payment_status ?? 'UNPAID').toUpperCase();
                             if (payment === 'SUCCESS') payment = 'PAID';
                             let isFree = parseFloat(row.price || 0) <= 0;
@@ -130,7 +120,6 @@
                                 (payment === 'PAID' ? '<span class="badge badge-paid"><i class="fas fa-check-circle me-1"></i>Paid</span>' :
                                     '<span class="badge badge-unpaid"><i class="fas fa-times-circle me-1"></i>Unpaid</span>');
 
-                            // Course status badge
                             let courseStatusRaw = row.course_status ?? 'Enrolled';
                             let courseStatus = courseStatusRaw.toLowerCase().replace(' ', '_');
                             let statusBadge = '';
@@ -170,7 +159,6 @@
             });
         });
 
-        // Add animated background class to body
         $('body').addClass('animated-background');
     </script>
 </body>

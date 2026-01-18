@@ -14,7 +14,6 @@ class TrainerController extends BaseController
         $this->trainerModel = new TrainerModel();
     }
 
-    // Public Trainer Listing
     public function trainer()
     {
         $rows = $this->trainerModel->getTrainersWithCourses();
@@ -49,7 +48,7 @@ class TrainerController extends BaseController
     public function myProfile()
     {
         $session = session();
-        $trainerId = $session->get('trainer_id'); // Ensure trainer_id is set during login
+        $trainerId = $session->get('trainer_id');
 
         if (!$trainerId) {
             return redirect()->to('/login');

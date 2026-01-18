@@ -1,4 +1,3 @@
-<!-- Animated Background Elements -->
 <div class="bg-animation">
     <div class="bg-circle bg-circle-1"></div>
     <div class="bg-circle bg-circle-2"></div>
@@ -23,7 +22,6 @@
             </div>
         <?php endif; ?>
 
-        <!-- Page Header -->
         <section class="enrolled-header text-center fade-in-up" style="animation-delay: 0.1s;">
             <h1 class="enrolled-page-title"><i class="fas fa-graduation-cap me-2"></i>Courses Enrolled</h1>
             <p class="enrolled-page-subtitle">Your learning journey starts here</p>
@@ -33,7 +31,7 @@
             <div class="enrolled-courses-grid">
                 <?php foreach ($courses as $index => $c): ?>
                     <div class="enrolled-course-card fade-in-up" style="animation-delay: <?= 0.2 + ($index * 0.1) ?>s;" onclick="location.href='<?= site_url('courses/detail/' . $c['course_id']) ?>'">
-                        <!-- Course Image -->
+
                         <?php if (!empty($c['course_image'])): ?>
                             <div class="enrolled-course-image-container">
                                 <img src="<?= base_url($c['course_image']) ?>" alt="<?= esc($c['course_name']) ?>" class="enrolled-course-image">
@@ -45,14 +43,12 @@
                             </div>
                         <?php endif; ?>
 
-                        <!-- Course Content -->
                         <div class="enrolled-course-content">
                             <h3 class="enrolled-course-title"><?= esc($c['course_name']) ?></h3>
                             <p class="enrolled-course-desc">
                                 <?= esc(substr($c['course_desc'], 0, 100)) ?><?= strlen($c['course_desc']) > 100 ? '...' : '' ?>
                             </p>
 
-                            <!-- Progress Bar -->
                             <?php if (isset($c['progress'])): ?>
                                 <div class="enrolled-progress-section">
                                     <div class="enrolled-progress-info">
@@ -64,8 +60,7 @@
                                     </div>
                                 </div>
                             <?php endif; ?>
-
-                            <!-- Status Badge -->
+->
                             <div class="enrolled-course-footer">
                                 <span class="enrolled-status-badge enrolled-status-<?= strtolower(str_replace(' ', '-', $c['status'])) ?>">
                                     <?= esc($c['status']) ?>
@@ -89,10 +84,8 @@
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script>
     $(document).ready(function() {
-        // Add animated background class to body
         $('body').addClass('animated-background');
 
-        // Trigger animations on page load
         $('.fade-in-up').each(function(index) {
             $(this).css('opacity', '1');
         });

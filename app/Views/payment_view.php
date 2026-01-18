@@ -1,4 +1,3 @@
-<!-- Animated Background Elements -->
 <div class="bg-animation">
     <div class="bg-circle bg-circle-1"></div>
     <div class="bg-circle bg-circle-2"></div>
@@ -9,12 +8,10 @@
 <div class="payment-page-wrapper">
     <div class="container payment-page">
 
-        <!-- PAGE TITLE -->
         <section class="payment-header text-center fade-in-up" style="animation-delay: 0.1s;">
             <h2 class="page-title">Course Payment</h2>
         </section>
 
-        <!-- FLASH MESSAGES -->
         <?php if (session()->getFlashdata('error')): ?>
             <div class="alert alert-danger text-center fade-in-up">
                 <?= session()->getFlashdata('error') ?>
@@ -31,7 +28,6 @@
 
             <div class="payment-content-wrapper">
 
-                <!-- COURSE SUMMARY -->
                 <div class="payment-summary-card fade-in-up" style="animation-delay: 0.3s;">
                     <h3 class="payment-course-title"><?= esc($course['course_name']) ?></h3>
 
@@ -56,7 +52,6 @@
                     </div>
                 </div>
 
-                <!-- PAYMENT FORM -->
                 <div class="payment-form-card fade-in-up" style="animation-delay: 0.4s;">
                     <h4 class="payment-form-title">Payment Details</h4>
 
@@ -91,7 +86,6 @@
                 </div>
             </div>
 
-            <!-- BACK BUTTON -->
             <div class="text-center mt-4">
                 <a href="<?= site_url('courses/detail/' . $course['course_id']) ?>"
                     class="btn-back-course">
@@ -108,10 +102,8 @@
     </div>
 </div>
 
-<!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
-<!-- CONFIRM PAYMENT SCRIPT -->
 <script>
     $(document).ready(function() {
 
@@ -130,7 +122,7 @@
             );
 
             if (!confirmPayment) {
-                e.preventDefault(); // stop form submit
+                e.preventDefault();
             }
         });
 

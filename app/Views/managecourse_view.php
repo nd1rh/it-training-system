@@ -6,19 +6,12 @@
     <title>Course Details | StartIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Main CSS -->
     <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Animated Background Elements -->
     <div class="bg-animation">
         <div class="bg-circle bg-circle-1"></div>
         <div class="bg-circle bg-circle-2"></div>
@@ -26,17 +19,11 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <!-- =========================
-         COURSE DETAILS PAGE
-    ========================== -->
     <div class="container course-page" style="position: relative; z-index: 1;">
-
-        <!-- Page Title -->
         <section class="course-header">
             <h1 class="page-title text-center">Course Details</h1>
         </section>
 
-        <!-- Search -->
         <section class="course-search mb-4">
             <div class="position-relative">
                 <i class="fas fa-search position-absolute" style="left: 15px; top: 50%; transform: translateY(-50%); color: #6c757d; z-index: 10;"></i>
@@ -49,14 +36,12 @@
             </div>
         </section>
 
-        <!-- Add New Course Button -->
         <div class="d-flex gap-2 justify-content-center" style="white-space: nowrap; margin-bottom: 20px;">
             <a href="<?= base_url('configure/course/add') ?>" class="btn btn-success fw-bold">
                 <i class="fas fa-plus me-1"></i> Add New Course
             </a>
         </div>
 
-        <!-- Table -->
         <section class="course-table">
             <div class="table-container" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
                 <table class="table table-hover table-bordered align-middle">
@@ -109,9 +94,6 @@
 
     </div>
 
-    <!-- =========================
-         SCRIPTS
-    ========================== -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <script>
@@ -166,7 +148,6 @@
                 });
             });
 
-            // Add animated background class to body
             $('body').addClass('animated-background');
         });
     </script>

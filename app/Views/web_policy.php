@@ -6,16 +6,13 @@
     <title>Web Policy | StartIT</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
     <link href="<?= base_url('assets/css/web-policy.css') ?>" rel="stylesheet">
 </head>
 
 <body class="web-policy-body">
 
-    <!-- Animated Background Elements -->
     <div class="bg-animation">
         <div class="bg-circle bg-circle-1"></div>
         <div class="bg-circle bg-circle-2"></div>

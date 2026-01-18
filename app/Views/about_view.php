@@ -6,16 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | StartIT</title>
 
-    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Main CSS -->
     <link href="<?= base_url('assets/css/style.css') ?>" rel="stylesheet">
 </head>
 
 <body>
-
-    <!-- Animated Background Elements -->
     <div class="bg-animation">
         <div class="bg-circle bg-circle-1"></div>
         <div class="bg-circle bg-circle-2"></div>
@@ -23,14 +18,8 @@
         <div class="bg-circle bg-circle-4"></div>
     </div>
 
-    <!-- =========================
-         ABOUT PAGE
-    ========================== -->
     <div class="container about-page" style="position: relative; z-index: 1;">
 
-        <!-- =========================
-             INTRO SECTION
-        ========================== -->
         <section class="about-intro text-center">
             <h1 class="about-title">About StartIT</h1>
             <p class="about-lead">
@@ -40,9 +29,6 @@
             </p>
         </section>
 
-        <!-- =========================
-             MISSION / VISION / VALUES
-        ========================== -->
         <section class="about-container">
             <div class="row g-4">
 
@@ -79,9 +65,6 @@
             </div>
         </section>
 
-        <!-- =========================
-             TEAM SECTION
-        ========================== -->
         <section class="about-team">
             <h2 class="team-title text-center">Our Team</h2>
 

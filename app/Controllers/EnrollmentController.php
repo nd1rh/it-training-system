@@ -31,7 +31,6 @@ class EnrollmentController extends BaseController
                 ->with('error', 'You are already enrolled in this course.');
         }
 
-        // Free course
         if ((float)$course['price'] === 0.00) {
             $enrollModel->insert([
                 'trainee_id' => $traineeId,
@@ -43,7 +42,6 @@ class EnrollmentController extends BaseController
                 ->with('success', 'You have successfully enrolled.');
         }
 
-        // Paid course
         return redirect()->to(site_url('payment/' . $courseId));
     }
 

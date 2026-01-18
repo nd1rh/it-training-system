@@ -1,4 +1,3 @@
-<!-- Animated Background Elements -->
 <div class="bg-animation">
     <div class="bg-circle bg-circle-1"></div>
     <div class="bg-circle bg-circle-2"></div>

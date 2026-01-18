@@ -20,7 +20,6 @@ class CourseEnrollmentModel extends Model
 
     protected $useTimestamps = false;
 
-    // Optional helper
     public function isAlreadyEnrolled($traineeId, $courseId)
     {
         return $this->where([

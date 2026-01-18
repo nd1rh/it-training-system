@@ -55,14 +55,12 @@ class PaymentController extends BaseController
                 ->with('error', 'You have already paid for this course.');
         }
 
-        // Create enrollment
         $enrollId = $enrollModel->insert([
             'trainee_id' => $traineeId,
             'course_id'  => $courseId,
             'status'     => 'Enrolled'
         ]);
-
-        // Record payment
+        
         $paymentModel->insert([
             'course_enroll_id' => $enrollId,
             'amount'           => $course['price'],
