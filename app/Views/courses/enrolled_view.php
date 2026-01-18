@@ -30,7 +30,8 @@
         <?php if (!empty($courses)): ?>
             <div class="enrolled-courses-grid">
                 <?php foreach ($courses as $index => $c): ?>
-                    <div class="enrolled-course-card fade-in-up" style="animation-delay: <?= 0.2 + ($index * 0.1) ?>s;" onclick="location.href='<?= site_url('courses/detail/' . $c['course_id']) ?>'">
+                    <div class="enrolled-course-card fade-in-up" style="animation-delay: <?= 0.2 + ($index * 0.1) ?>s;" 
+                    onclick="location.href='<?= site_url('courses/detail/' . $c['course_id']) ?>'">
 
                         <?php if (!empty($c['course_image'])): ?>
                             <div class="enrolled-course-image-container">

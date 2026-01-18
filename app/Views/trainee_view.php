@@ -27,7 +27,8 @@
             <input type="text" id="search" class="form-control mb-3" placeholder="Search by Name, Email or Course" style="padding-left: 45px;">
         </div>
 
-        <div class="table-responsive" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
+        <div class="table-responsive" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 15px; padding: 20px; 
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);">
             <table class="table table-bordered table-hover">
                 <thead class="table-dark">
                     <tr>
@@ -82,8 +83,10 @@
                                 </td>
                                 <td>
                                     <div class="d-flex gap-2">
-                                        <a href="<?= base_url('configure/trainee/edit/' . $row['trainee_id']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit me-1"></i>Edit</a>
-                                        <a href="<?= base_url('configure/trainee/delete/' . $row['trainee_id']) ?>" class="btn btn-sm btn-danger" onclick="return confirm('Are you sure? This will delete all enrollments.');"><i class="fas fa-trash me-1"></i>Delete</a>
+                                        <a href="<?= base_url('configure/trainee/edit/' . $row['trainee_id']) ?>" class="btn btn-sm btn-primary"><i class="fas fa-edit me-1"></i>
+                                        Edit</a>
+                                        <a href="<?= base_url('configure/trainee/delete/' . $row['trainee_id']) ?>" class="btn btn-sm btn-danger" 
+                                        onclick="return confirm('Are you sure? This will delete all enrollments.');"><i class="fas fa-trash me-1"></i>Delete</a>
                                     </div>
                                 </td>
                             </tr>

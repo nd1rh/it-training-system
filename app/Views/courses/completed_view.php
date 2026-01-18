@@ -15,18 +15,21 @@
         <?php if (!empty($courses)): ?>
             <div class="enrolled-courses-grid">
                 <?php foreach ($courses as $index => $c): ?>
-                    <div class="enrolled-course-card fade-in-up" style="animation-delay: <?= 0.2 + ($index * 0.1) ?>s;" onclick="location.href='<?= site_url('courses/detail/' . $c['course_id']) ?>'">
+                    <div class="enrolled-course-card fade-in-up" style="animation-delay: <?= 0.2 + ($index * 0.1) ?>s;" 
+                    onclick="location.href='<?= site_url('courses/detail/' . $c['course_id']) ?>'">
                         <?php if (!empty($c['course_image'])): ?>
                             <div class="enrolled-course-image-container">
                                 <img src="<?= base_url($c['course_image']) ?>" alt="<?= esc($c['course_name']) ?>" class="enrolled-course-image">
-                                <div style="position: absolute; top: 10px; right: 10px; background: rgba(40, 167, 69, 0.95); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;">
+                                <div style="position: absolute; top: 10px; right: 10px; background: rgba(40, 167, 69, 0.95); color: white; padding: 5px 12px;
+                                 border-radius: 20px; font-size: 12px; font-weight: 600;">
                                     <i class="fas fa-check-circle me-1"></i>Completed
                                 </div>
                             </div>
                         <?php else: ?>
                             <div class="enrolled-course-image-container enrolled-course-placeholder">
                                 <div class="enrolled-course-placeholder-icon"><i class="fas fa-book fa-3x"></i></div>
-                                <div style="position: absolute; top: 10px; right: 10px; background: rgba(40, 167, 69, 0.95); color: white; padding: 5px 12px; border-radius: 20px; font-size: 12px; font-weight: 600;">
+                                <div style="position: absolute; top: 10px; right: 10px; background: rgba(40, 167, 69, 0.95); color: white; padding: 5px 12px; 
+                                border-radius: 20px; font-size: 12px; font-weight: 600;">
                                     <i class="fas fa-check-circle me-1"></i>Completed
                                 </div>
                             </div>

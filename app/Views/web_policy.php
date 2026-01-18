@@ -31,27 +31,32 @@
 
                     <section class="policy-section">
                         <h2>1. Privacy Policy</h2>
-                        <p>StartIT respects your privacy. Any personal information collected during registration or course participation is securely stored and used solely to enhance your learning experience. We do not share your personal data with third parties without your consent, except where required by law.</p>
+                        <p>StartIT respects your privacy. Any personal information collected during registration or course participation is securely stored and used solely 
+                            to enhance your learning experience. We do not share your personal data with third parties without your consent, except where required by law.</p>
                     </section>
 
                     <section class="policy-section">
                         <h2>2. Terms of Use</h2>
-                        <p>Users of StartIT must agree to use the platform responsibly. All course content is for personal and educational purposes only. Unauthorized distribution, copying, or commercial use of our content is strictly prohibited.</p>
+                        <p>Users of StartIT must agree to use the platform responsibly. All course content is for personal and educational purposes only. 
+                            Unauthorized distribution, copying, or commercial use of our content is strictly prohibited.</p>
                     </section>
 
                     <section class="policy-section">
                         <h2>3. Intellectual Property</h2>
-                        <p>All materials, including courses, videos, documents, and software provided by StartIT, are protected by copyright and intellectual property laws. Users are granted a limited license to access and use the materials for learning purposes only.</p>
+                        <p>All materials, including courses, videos, documents, and software provided by StartIT, are protected by copyright and intellectual property laws. 
+                            Users are granted a limited license to access and use the materials for learning purposes only.</p>
                     </section>
 
                     <section class="policy-section">
                         <h2>4. Security</h2>
-                        <p>We take the security of our users seriously. StartIT implements industry-standard security measures to protect your data and prevent unauthorized access. Users are responsible for maintaining the confidentiality of their login credentials.</p>
+                        <p>We take the security of our users seriously. StartIT implements industry-standard security measures to protect your data and prevent 
+                            unauthorized access. Users are responsible for maintaining the confidentiality of their login credentials.</p>
                     </section>
 
                     <section class="policy-section">
                         <h2>5. Disclaimer</h2>
-                        <p>While we strive to provide accurate and up-to-date information, StartIT is not responsible for any outcomes resulting from the use of our platform. Users should verify information independently and apply their learning responsibly.</p>
+                        <p>While we strive to provide accurate and up-to-date information, StartIT is not responsible for any outcomes resulting from the use 
+                            of our platform. Users should verify information independently and apply their learning responsibly.</p>
                     </section>
 
                 </div>

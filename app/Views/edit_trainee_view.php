@@ -21,7 +21,8 @@
     <div class="container mt-5" style="position: relative; z-index: 1;">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 20px; padding: 40px; box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
+                <div class="card" style="background: rgba(255, 255, 255, 0.98); backdrop-filter: blur(10px); border-radius: 20px; padding: 40px; 
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);">
                     <h2 class="text-center mb-4">Edit Trainee: <?= esc($trainee['full_name']) ?></h2>
 
                     <?php if (session()->getFlashdata('errors')): ?>
